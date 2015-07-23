@@ -299,6 +299,10 @@ input {
 /* 
   TEXT AND VISUAL ELEMENTS -------------------
 */
+#first-article {
+    margin-top: 8rem;
+}
+
 #siteName{
     color: rgb(0, 155, 223);
     font-family: 'Open Sans', sans-serif;
@@ -318,28 +322,31 @@ input {
 }
 
 h1 {
-  color: #ffffff;
-  font-weight: normal;
-  font-size: 2.5rem;
-  margin-top: 1rem;
+    color: rgb(0, 155, 223);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 1rem;
 }
 
 h2 {
-    font-weight: normal;
+    color: rgb(0, 155, 223);
+    font-weight: 700;
     font-size: 2rem;
     margin:0;
 }
 
 h3 {
-    font-weight: normal;
-    font-size: 1.5rem;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    color: rgb(0, 155, 223);
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 0.75em;
+    margin-bottom: 0.35em;
 }
 
 h4 {
-    font-weight: normal;
-    font-size: 1.25rem;
+    color: rgb(0, 155, 223);
+    font-weight: 700;
+    font-size: 1.2rem;
     margin:0;
 }
 
@@ -742,12 +749,9 @@ ol li{
  *  the trip experience, and so on.
  */
 .featureContainer {
-    background-color: black;    
     width: 70rem;
     margin: 0 auto;
     clear: both;
-    border-top: 0.25em solid rgb(100, 100, 100);
-    border-bottom: 0.25em solid rgb(100, 100, 100);
 }
 
 
