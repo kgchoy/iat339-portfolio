@@ -6,7 +6,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin:0;
     padding: 0;
-    background-image: url("../img/starField.jpg");
 }
 
 section:not([id]) {
@@ -560,6 +559,10 @@ ol li{
         float: right;
     }
 
+    #navBarRight .buttonNav {
+        font-size: 1rem;
+    }
+
     /* Styling for submit button on a dark background. */
     #menuButton, #menuButton:visited, #menuButton:active {
         background-color:rgb(0, 155, 223);
@@ -607,10 +610,22 @@ ol li{
 
 }
 
+@media (max-width: 30.8rem) {
+    #navBarRight {
+        float: left;
+        clear: both;
+    }
+
+    #navBarRight .buttonNav {
+        margin-top: 0;
+        font-size: 1.15rem;
+    } 
+}
+
 /* text and interactive elements for very small screens */
 @media (max-width: 23rem) {
     #siteName {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 0.5rem;
     }
 
