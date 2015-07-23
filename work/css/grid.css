@@ -20,11 +20,11 @@
  *  General 3-column grid structure
  */
 .col-2of3 {
-    width: 60%;
+    width: 75%;
 }
 
 .col-1of3Main {
-    width: 40%;
+    width: 25%;
 }
 
 .col-3of3 {

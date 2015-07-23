@@ -454,22 +454,23 @@ ol li{
 }
 
 /* Reduce the padding */
-@media (max-width: 80rem) {
+/*@media (max-width: 80rem) {
     #centeredNavContainer, #centeredFooterContainer {
         padding-left: 5%;
         padding-right: 5%;
     }
-}
+}*/
 
 /* The actual centered navigation bar itself */
 #navBar, #footerBar {
     clear: both;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 155, 223);
-    width: 70rem;
+    width: 80%;
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 2.5em;
 }
 
 #navHeader{
@@ -749,9 +750,18 @@ ol li{
  *  the trip experience, and so on.
  */
 .featureContainer {
-    width: 70rem;
+    width: 100%;
     margin: 0 auto;
     clear: both;
+}
+
+.full-width-image {
+    width: 100%;
+}
+
+#page-container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 
