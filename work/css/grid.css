@@ -10,6 +10,10 @@
     padding: 1.5em 2.5em;
 }
 
+.col-1of3-work-figure {
+    padding: 0;
+}
+
 /*.pageContainer {
     width: 80%;
     margin: 0 auto;
@@ -31,47 +35,47 @@
     float: none;
 }
 
-.col-1of3Service {
+.col-1of3-work-main {
     width: 33.333%;
 }
 
-.col-1of3Main figure, .serviceFigure figure {
+.col-1of3Main figure, .main-work-listing-figure figure {
     margin: 0;  /* remove default figure margin */
 }
 
-.col-1of3Main figure img, .serviceFigure figure img {
+.col-1of3Main figure img, .main-work-listing-figure figure img {
     width: 100%;  /* fill as much of the width and height of the column as possible */
     height: 100%;
 }
 
 /* override the [class^='col-'] declaration above for now */
-.col-2of3ServiceDescription, .col-1of3ServiceFigure {
+.col-2of3WorkDescription, .col-1of3-work-figure {
     width: 100%;
     padding: 0;
 }
 
-.col-1of3Service {
+.col-1of3-work-main {
     padding-top: 0.25em;
 }
 
 
 @media (max-width: 70rem) {
-    .hotelGrid .col-1of3Service {
+    .main-page-work-grid .col-1of3-work-main {
         width: 100%;
     }
 
-    .col-2of3ServiceDescription {
+    .col-2of3WorkDescription {
         width: 62.1%;  /* make this text section as close to the images as possible */
         padding-right: 1.85em;  /* reduce the amount of padding compared to before */
     }
 
-    .col-1of3ServiceFigure {
+    .col-1of3-work-figure {
         float: right;
         padding-left: 1.85em;  /* reduce the amount of padding compared to before */
         width: 37.9%;  /* make this image width as close to the images as possible */
     }
 
-    .hotelGrid:after {
+    .main-page-work-grid:after {
         content: "";
         display: block; /* in case it wasn't */
         clear: both;
@@ -92,17 +96,17 @@
     }
 
     /* fix bug with float - fixes a problem where floated items don't have a height */
-    .col-1of3Service {
+    .col-1of3-work-main {
         clear: both;
         width: 100%;
     }
 
-    .col-2of3ServiceDescription {
+    .col-2of3WorkDescription {
         width: 55.5%;
         padding-right: 1.85em;  /* reduce the amount of padding compared to before */
     }
 
-    .col-1of3ServiceFigure {
+    .col-1of3-work-figure {
         width: 44.5%;
         padding-left: 1.85em;  /* reduce the amount of padding compared to before */
     }
@@ -115,12 +119,12 @@
         padding: 1.5em 1.85em;  /* add more vertical padding */
     }
 
-    .col-1of3Main, .col-1of3Service {
+    .col-1of3Main, .col-1of3-work-main {
         padding: 1.5em 1.85em;
         width: 100%;
     }
 
-    .col-2of3ServiceDescription, .col-1of3ServiceFigure {
+    .col-2of3WorkDescription, .col-1of3-work-figure {
         padding: 0;
         width: 100%;
     }
@@ -153,6 +157,11 @@
     margin-right: 0;
 }
 
+.col-1of3-work-main {
+    padding-left: 0;
+    padding-right: 3em;
+}
+
 /* collapse form to single-column */
 @media (max-width: 48rem) {
     /* query code for both columns; collapse to single-column */
@@ -181,3 +190,4 @@
     display: block; /* in case it wasn't */
     clear: both;
 }
+

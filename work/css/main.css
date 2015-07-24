@@ -1,7 +1,6 @@
 /*
  *  Main CSS for the Orbitar website. For CSS related to the site's grids, see grid.css.
  */
-
 body {
     font-family: 'Open Sans', sans-serif;
     margin:0;
@@ -309,7 +308,7 @@ input {
   TEXT AND VISUAL ELEMENTS -------------------
 */
 #first-article {
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 #siteName{
@@ -341,7 +340,6 @@ h2 {
     color: rgb(0, 155, 223);
     font-weight: 700;
     font-size: 2rem;
-    margin:0;
 }
 
 h3 {
@@ -350,6 +348,11 @@ h3 {
     font-size: 1.4rem;
     margin-top: 0.75em;
     margin-bottom: 0.35em;
+}
+
+.work-description h3 a, .work-description h3 a:visited {
+    text-decoration: none;
+    color: rgb(0, 155, 223);
 }
 
 h4 {
@@ -437,6 +440,32 @@ ol li{
     visibility: hidden;
     height: 3rem;
     margin-top: -2rem;
+}
+
+#banner-text {
+    margin-bottom: 4em;
+}
+
+#banner-text p {
+    font-weight: 700;
+    font-size: 2.1rem;
+    margin: 0.5em 0;
+}
+
+.partial-width-button {
+    font-size: 1.2rem;
+    border-radius: 0.6em;
+
+}
+
+@media (max-width: 36rem) {
+    #banner-text p {
+        font-size: 1.5rem;
+    }
+
+    .partial-width-button {
+        font-size: 1rem;
+    }
 }
 
 
@@ -887,3 +916,4 @@ footer{
         background-color: rgb(240, 240, 240);
     }
 }
+
