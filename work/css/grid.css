@@ -35,6 +35,10 @@
     float: none;
 }
 
+.col-3of3 h1 {
+    margin-bottom: 0;
+}
+
 .col-1of3-work-main {
     width: 33.333%;
 }
