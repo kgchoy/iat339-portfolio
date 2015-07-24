@@ -926,3 +926,6 @@ footer{
     }
 }
 
+.main-work-listing-figure img {
+    border: 1px solid #cccccc;
+}
