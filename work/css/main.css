@@ -95,46 +95,6 @@ section code {
 }*/
 
 /* Styling for the navigation button */
-.button-navM {
-  display: inline-block;
-  padding: 0.5em 0.75em;
-  color: #000000;
-  background-color: #EFEFEF;
-  border-left: 0.0625em solid #000000;
-  border-right: 0.0625em solid #000000;
-  text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
-
-.button-navL {
-  display: inline-block;
-  padding: 0.5em 0.75em;
-  color: #000000;
-  background-color: #EFEFEF;
-  border-left: 0.125em solid #000000;
-  border-right: 0.0625em solid #000000;
-  text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
-
-.button-navR {
-  display: inline-block;
-  padding: 0.5em 0.75em;
-  color: #000000;
-  background-color: #EFEFEF;
-  border-left: 0.0625em solid #000000;
-  border-right: 0.125em solid #000000;
-  text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
-
-.button-navM:hover, .button-navM:focus, .button-navL:hover, .button-navL:focus , .button-navR:hover, .button-navR:focus{
-  background-color: #CFCFCF;
-}
-
 p a {
     /*color: inherit;*/
     color: rgb(0, 155, 223);
@@ -177,20 +137,8 @@ p a {
     color:rgb(255, 255, 255);
     padding: 0.5em 1em;
     font-size:1.125rem;
-    border-radius:0.4rem;
+    border-radius: 0.6em;
     border: 0.125em solid #000000;
-    font-family: 'Source Sans Pro', sans-serif;
-    cursor: pointer;
-}
-
-/* Styling for submit button on a dark background. */
-.buttonGenericOnDark, .buttonGenericOnDark:visited, .buttonGeneric:active {
-    background-color:rgb(0, 155, 223);
-    color:#ffffff;
-    padding: 0.5em 1em;
-    font-size:1.125rem;
-    border-radius:0.4rem;
-    border: 0.125em solid #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
     cursor: pointer;
 }
@@ -386,32 +334,6 @@ h4 {
     margin-top: 1.25em;
 }
 
-.ManualFindTitle{
-  margin-top:1rem;
-}
-
-.ondarkContrast{
-    color:#FFFFFF;
-}
-
-.ondark{
-  color:rgb(200,200,200);
-}
-
-.ondim{
-    color:rgb(190,190,190);
-}
-
-.scheduler ul{
-    list-style-type: none;
-    padding-left:1em;
-    margin:0.5em 0;
-}
-
-.scheduler ul li{
-    margin:0.125em 0;
-}
-
 .menu-items-list{
     list-style-type: none;
     height: 100%;
@@ -434,12 +356,6 @@ ol{
 
 ol li{
     margin:0.125em 0;
-}
-
-
-/* bold version of the font */
-.fontDemi {
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .biggerText {
@@ -730,54 +646,6 @@ ol li{
 /* After floating to the right, this sets the order of the menu items in the correct order */
 #nav-bar-right ul li {
     float: left;
-}
-
-.everythingContainer{
-  width:100%;
-  overflow-x:hidden;
-}
-
-#listingContainer{
-  overflow: hidden;
-  width:80%;
-  border: 0.125rem solid #cfcfcf;
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-  padding: .25rem;
-  z-index:+9001;
-  padding-bottom: 1.5rem;
-}
-
-.listing{
-  width: 23rem;
-  border: 0.0625rem solid black;
-  height: 30rem;
-  margin: 1.25rem 0 0 1.25rem;
-  border-radius: 0.25rem;
-  padding: 0.75rem;
-  display:inline-block;
-  float:left;
-}
-
-.listingButtonHolder{
-    float:right; 
-    z-index:+1; 
-    margin-top:-3.25rem; 
-    margin-right:0.25rem;
-    position:relative;
-}
-
-/* For the green Earth background image at the top */
-.earthBG{
-  background-image: url("../img/earthBackwards.png");
-  background-repeat: no-repeat;
-}
-
-@media(max-width: 120.5rem){ 
-  .earthBG{
-    /* shrink the background so that the second bubble fits right above Earth's edge cutoff */
-    background-size: 120.5rem;
-  }
 }
 
 /* css for the site structure */
