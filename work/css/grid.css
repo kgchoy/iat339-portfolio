@@ -53,7 +53,7 @@
 }
 
 /* override the [class^='col-'] declaration above for now */
-.col-2of3WorkDescription, .col-1of3-work-figure {
+.col-2of3-work-description, .col-1of3-work-figure {
     width: 100%;
     padding: 0;
 }
@@ -68,7 +68,7 @@
         width: 100%;
     }
 
-    .col-2of3WorkDescription {
+    .col-2of3-work-description {
         width: 62.1%;  /* make this text section as close to the images as possible */
         padding-right: 1.85em;  /* reduce the amount of padding compared to before */
     }
@@ -105,7 +105,7 @@
         width: 100%;
     }
 
-    .col-2of3WorkDescription {
+    .col-2of3-work-description {
         width: 55.5%;
         padding-right: 1.85em;  /* reduce the amount of padding compared to before */
     }
@@ -128,7 +128,7 @@
         width: 100%;
     }
 
-    .col-2of3WorkDescription, .col-1of3-work-figure {
+    .col-2of3-work-description, .col-1of3-work-figure {
         padding: 0;
         width: 100%;
     }
