@@ -2,8 +2,8 @@
  *  Main CSS for the Orbitar website. For CSS related to the site's grids, see grid.css.
  */
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin:0;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
     padding: 0;
 }
 
@@ -41,7 +41,7 @@ section code {
 
 /* Styling for the navigation button */
 .buttonNav {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     display: inline-block;      /* make the button inline, but preserve block properties such as margins */
     padding: 0.75em 1.5em;
@@ -70,7 +70,7 @@ section code {
 /* Reduce to thinner weight of font */
 @media (max-width: 40rem) {
     .buttonNav {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
     }
 }
 
@@ -88,11 +88,11 @@ section code {
     display: none;
 }
 
-@media (max-width: 39.5rem) {
+/*@media (max-width: 39.5rem) {
     #menuButton {
         display: block;
     }
-}
+}*/
 
 /* Styling for the navigation button */
 .buttonNavM {
@@ -150,7 +150,7 @@ p a {
   font-size: 1rem;
   border: 0.125em solid rgb(60, 60, 60);
   border-radius:0.4rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
   margin: 1.25em 0;
 
@@ -179,7 +179,7 @@ p a {
     font-size:1.125rem;
     border-radius:0.4rem;
     border: 0.125em solid #000000;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     cursor: pointer;
 }
 
@@ -191,7 +191,7 @@ p a {
     font-size:1.125rem;
     border-radius:0.4rem;
     border: 0.125em solid #ffffff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     cursor: pointer;
 }
 
@@ -268,7 +268,7 @@ p a {
 
 /* for textarea field - all properties below needed to override default css */
 .commentsTextareaFull {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   padding: 0.5em 0.5em;
   width: 100%;
@@ -277,7 +277,7 @@ p a {
 
 /* for feedback page's textarea fields */
 .feedbackTextareaFull {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   padding: 0.5em 0.5em;
   width: 31rem;
@@ -297,7 +297,7 @@ p a {
 }
 
 input {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .formLabel {
@@ -313,20 +313,26 @@ input {
 
 #siteName{
     color: rgb(0, 155, 223);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
+    float: left;
+    margin-left: 0.3em;
 }
 
 
 #siteName a, #siteName a:visited {
-    color: #ffffff;
     text-decoration: none;
     color: rgb(0, 155, 223);
 }
 
 #siteName a:hover {
     color: rgb(255, 0, 0);
+}
+
+#nav-bar-logo {
+    vertical-align: bottom;
+    float: left;
 }
 
 h1 {
@@ -407,12 +413,12 @@ h4 {
 }
 
 .dropDownContainer{
-  list-style-type: none;
-  height: 100%;
+    list-style-type: none;
+    height: 100%;
 }
 
 .dropDownContainer li{
-  display:inline-block;
+/*  display:inline-block;*/
 }
 
 .dropDownContainer .dropDownButton {
@@ -433,7 +439,7 @@ ol li{
 
 /* bold version of the font */
 .fontDemi {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .biggerText {
@@ -555,7 +561,8 @@ ol li{
 #navBarLeft {
     float: left;
     clear: both;
-    padding-bottom: 0.5em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
 }
 
 #navBarLeft ul {
@@ -621,6 +628,10 @@ ol li{
 
 /* Collapse the right-hand menu options into a second row */
 @media (max-width: 39.5rem) {
+    #navBar {
+        width: 100%;
+    }
+
     #navBarRight {
         float: right;
     }
@@ -639,7 +650,7 @@ ol li{
         border: 0.125em solid #ffffff;
         cursor: pointer;
         margin-top: 0.3rem;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
         font-variant: small-caps;
     }
 
@@ -647,10 +658,10 @@ ol li{
     #menuButton:hover {
       background-color: rgb(44, 44, 230);
     }
-	
-	.menuButtonFlashUp{
-		background-color: rgb(44, 44, 230);
-	}
+  
+    .menuButtonFlashUp{
+        background-color: rgb(44, 44, 230);
+    }
 
     #fullscreenMenuContainer {
         visibility: hidden;
@@ -674,18 +685,23 @@ ol li{
       visibility: visible;
     }
 
+    #siteName {
+        display: none;
+    }
+
 }
 
 @media (max-width: 30.8rem) {
     #navBarRight {
-        float: left;
-        clear: both;
+        /*float: left;*/
+        /*clear: both;*/
     }
 
     #navBarRight .buttonNav {
         margin-top: 0;
         font-size: 1.15rem;
-    } 
+    }
+
 }
 
 /* text and interactive elements for very small screens */
@@ -826,6 +842,11 @@ ol li{
     #page-container {
         width: 90%;
     }
+
+    #navBar {
+        width: 90%;
+        padding: 0;
+    }
 }
 
 @media(max-width: 75rem) {
@@ -898,7 +919,7 @@ footer{
     width: 30%;
     vertical-align: top;
     padding: 0.25em 0 0.5em 0.25em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .lastRow {
@@ -908,7 +929,7 @@ footer{
 
 .bookingCosts th {
     text-align: left;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-decoration: underline;
 }
 
