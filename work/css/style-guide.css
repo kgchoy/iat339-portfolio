@@ -10,26 +10,26 @@
 }
 
 /* override the header CSS from the actual site */
-#navHeader {
+#nav-header {
     position: static; /* in the actual site, position is fixed */
 }
 
-#centeredNavContainer {
+#centered-nav-container {
     /* position is fixed in the actual site; we don't want it fixed at the top in the style guide */
     position: static;
     display: block;
 }
 
-#navBar {
+#nav-bar-main {
     width: 100%;
 
 }
 
-#navBarLeft {
+#nav-bar-left {
     margin-left: 5%;
 }
 
-#navBarRight {
+#nav-bar-right {
     margin-right: 5%;
 }
 

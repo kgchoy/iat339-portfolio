@@ -23,7 +23,7 @@
           
           <p>
             Go to: <br>
-            <a href="#interactive_elements" class="buttonNavL">Interactive Elements</a><a href="#text_elements" class="buttonNavM">Text Elements</a><a href="#other_stuff" class="buttonNavM">Other stuff</a><a href="#combined_elements" class="buttonNavR">Combined Elements</a>
+            <a href="#interactive_elements" class="button-navL">Interactive Elements</a><a href="#text_elements" class="button-navM">Text Elements</a><a href="#other_stuff" class="button-navM">Other stuff</a><a href="#combined_elements" class="button-navR">Combined Elements</a>
           </p>
 
         </nav>
@@ -39,16 +39,16 @@
                 <h2>Navigation Button</h2>
 
                 <h3>CSS selector:</h3>
-                <p>.buttonNav</p>
+                <p>.button-nav</p>
 
                 <h3>Sample code:</h3>
                 <pre><code> <!-- code inside the pre tag must be formatted like this to display c -->
-&lt;a class="buttonNav" href="#"&gt;Link to Project&lt;/a&gt;
+&lt;a class="button-nav" href="#"&gt;Link to Project&lt;/a&gt;
                 </code></pre>
 
-                <h3>Rendered element for buttonNav:</h3>
+                <h3>Rendered element for button-nav:</h3>
 
-                <a class="buttonNav" href="#">Link to Project</a>
+                <a class="button-nav" href="#">Link to Project</a>
 
             </section>
 
@@ -272,7 +272,7 @@
             <h2>Main Header Navigation</h2>
             
             <h3>CSS selectors</h3>
-            <p>#navHeader</p>
+            <p>#nav-header</p>
 
             <p>
                 The header navigation bar is the primary method of accessing parts of the website. As our website is primarily a one-page site, many of the links will be anchor links to the rest of the same page if the user is accessing from the primary main page.
@@ -285,44 +285,44 @@
             <h3>Sample Code:</h3>
           
             <pre><code>
-&lt;nav id="navHeader"&gt; &lt;!-- banner --&gt;
-    &lt;div id="centeredNavContainer"&gt;
-        &lt;div id="navBar"&gt;
-            &lt;div id="navBarLeft"&gt;
-                &lt;span id="siteName"&gt;&lt;a href="mainpage.html"&gt;Kevin Choy&lt;/a&gt;&lt;/span&gt;
-            &lt;/div&gt; &lt;!-- ./navBarLeft --&gt;
-            &lt;div id="navBarRight"&gt;
-                &lt;ul class="dropDownContainer"&gt;
+&lt;nav id="nav-header"&gt; &lt;!-- banner --&gt;
+    &lt;div id="centered-nav-container"&gt;
+        &lt;div id="nav-bar-main"&gt;
+            &lt;div id="nav-bar-left"&gt;
+                &lt;span id="site-name"&gt;&lt;a href="mainpage.html"&gt;Kevin Choy&lt;/a&gt;&lt;/span&gt;
+            &lt;/div&gt; &lt;!-- ./nav-bar-left --&gt;
+            &lt;div id="nav-bar-right"&gt;
+                &lt;ul class="menu-items-list"&gt;
                     &lt;!-- when any of these buttons are clicked, close the menu --&gt;
-                    &lt;li&gt;&lt;a class="buttonNav dropDownButton" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a class="buttonNav dropDownButton" href="#"&gt;Work&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a class="buttonNav dropDownButton" href="#"&gt;Writing&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a class="buttonNav dropDownButton" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class="button-nav" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class="button-nav" href="#"&gt;Work&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class="button-nav" href="#"&gt;Writing&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class="button-nav" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
                 &lt;/ul&gt;
-            &lt;/div&gt; &lt;!-- ./navBarRight --&gt;
-        &lt;/div&gt; &lt;!-- ./navBar --&gt;
+            &lt;/div&gt; &lt;!-- ./nav-bar-right --&gt;
+        &lt;/div&gt; &lt;!-- ./nav-bar-main --&gt;
     &lt;/div&gt; &lt;!-- ./centered-nav-container --&gt;
 &lt;/nav&gt;
             </code></pre>
             
             <h3>Rendered Element</h3>
             
-            <nav id="navHeader"> <!-- banner -->
-                <div id="centeredNavContainer">
-                    <div id="navBar">
-                        <div id="navBarLeft">
-                            <span id="siteName"><a href="mainpage.html">Kevin Choy</a></span>
-                        </div> <!-- ./navBarLeft -->
-                        <div id="navBarRight">
-                            <ul class="dropDownContainer">
+            <nav id="nav-header"> <!-- banner -->
+                <div id="centered-nav-container">
+                    <div id="nav-bar-main">
+                        <div id="nav-bar-left">
+                            <span id="site-name"><a href="mainpage.html">Kevin Choy</a></span>
+                        </div> <!-- ./nav-bar-left -->
+                        <div id="nav-bar-right">
+                            <ul class="menu-items-list">
                                 <!-- when any of these buttons are clicked, close the menu -->
-                                <li><a class="buttonNav dropDownButton" href="#">About</a></li>
-                                <li><a class="buttonNav dropDownButton" href="#">Work</a></li>
-                                <li><a class="buttonNav dropDownButton" href="#">Writing</a></li>
-                                <li><a class="buttonNav dropDownButton" href="#">Contact</a></li>
+                                <li><a class="button-nav" href="#">About</a></li>
+                                <li><a class="button-nav" href="#">Work</a></li>
+                                <li><a class="button-nav" href="#">Writing</a></li>
+                                <li><a class="button-nav" href="#">Contact</a></li>
                             </ul>
-                        </div> <!-- ./navBarRight -->
-                    </div> <!-- ./navBar -->
+                        </div> <!-- ./nav-bar-right -->
+                    </div> <!-- ./nav-bar-main -->
                 </div> <!-- ./centered-nav-container -->
             </nav>
         </section>
