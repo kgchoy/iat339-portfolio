@@ -818,3 +818,19 @@ footer{
 .main-work-listing-figure img {
     border: 1px solid #cccccc;
 }
+
+/*header:after, #nav-bar-main, #centered-nav-container {
+    clear: both;
+}*/
+
+.menu-items-list:after {
+    /* clearfix to prevent zero-height element */
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#nav-header {
+    height: auto;
+    display: block;
+}
