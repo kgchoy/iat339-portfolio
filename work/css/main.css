@@ -358,7 +358,19 @@ h4 {
 .menu-items-list .button-header-nav {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 155, 223);
+}
 
+/* for header nav buttons, swap padding for margin so to reduce the amount of
+   whitespace that is clickable */
+.button-header-nav {
+    padding: 0.75em 0.75em;
+    margin: 0 0.75em;
+}
+
+@media (max-width: 47rem) {
+    .button-header-nav {
+        margin: 0;
+    }
 }
 
 ol{
@@ -544,7 +556,7 @@ ol li{
 
 #footerBarRight {
     float: right;
- }
+}
 
 /* Collapse the right-hand menu options into a second row */
 @media (max-width: 39.5rem) {
@@ -556,9 +568,9 @@ ol li{
         float: right;
     }
 
-    #nav-bar-right .button-nav {
+/*    #nav-bar-right .button-nav {
         font-size: 1rem;
-    }
+    }*/
 
     /* Styling for submit button on a dark background. */
     #menuButton, #menuButton:visited, #menuButton:active {
@@ -619,9 +631,26 @@ ol li{
 
     #nav-bar-right .button-nav {
         margin-top: 0;
-        font-size: 1.15rem;
+        padding: 0.75em 0.75em;
+        margin: 0;
     }
+}
 
+@media (max-width: 50.75rem) {
+    #nav-bar-main {
+        padding: 0 1.85em;
+    }
+}
+
+@media (max-width: 27rem) {
+    #nav-bar-right {
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+    }
+    
+    #nav-bar-right .button-nav {
+        font-size: 1rem;
+    }
 }
 
 /* text and interactive elements for very small screens */
@@ -635,9 +664,13 @@ ol li{
         font-size: 1.2rem;
     }
 
+    #nav-bar-right .button-nav {
+        font-size: 0.875rem;
+    }
+
     #centered-nav-container {
-        padding-top: 0.3rem;
-        padding-bottom: 0.6rem;
+        /*padding-top: 0.3rem;*/
+        /*padding-bottom: 0.6rem;*/
     }
 
     .buttonGeneric, .buttonGeneric:visited, .buttonGeneric:active, 

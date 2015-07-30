@@ -166,6 +166,12 @@
     padding-right: 3em;
 }
 
+@media (max-width: 70rem) {
+    .col-1of3-work-main {
+        padding-right: 0;
+    }
+}
+
 /* collapse form to single-column */
 @media (max-width: 48rem) {
     /* query code for both columns; collapse to single-column */
@@ -184,7 +190,6 @@
     .mainPageFormGridCol-2of2 {
         margin-left: 0;
     }
-
 
 }
 
