@@ -764,7 +764,7 @@ figcaption {
     }
 }*/
 
-@media(max-width: 75rem) {
+@media(max-width: 87rem) {
     #page-container, #nav-bar-main {
         width: 100%;
     }

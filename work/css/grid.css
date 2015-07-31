@@ -90,13 +90,12 @@
 
 /* increase the amount of column width dedicated to the image */
 @media (max-width: 59rem) {
-    .col-2of3 {
-        width: 55%;
-        padding-right: 1.85em;  /* reduce the amount of padding compared to before */
-    }
     .col-1of3Main {
-        padding-left: 1.85em;  /* reduce the amount of padding compared to before */
-        width: 45%;
+        padding-right: 0;
+    }
+
+    .col-2of3 {
+        padding-right: 1.85em;  /* reduce the amount of padding compared to before */
     }
 
     /* fix bug with float - fixes a problem where floated items don't have a height */
@@ -114,6 +113,7 @@
         width: 44.5%;
         padding-left: 1.85em;  /* reduce the amount of padding compared to before */
     }
+
 }
 
 /* collapse to single-column */
