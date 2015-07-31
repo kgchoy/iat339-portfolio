@@ -893,3 +893,7 @@ footer{
         width: 100%;
     }
 }
+
+.semiopaque-type {
+    color: rgb(150, 150, 150);
+}
