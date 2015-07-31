@@ -390,11 +390,11 @@ ol li{
  *  Invisible tag used as an anchor, offsetted above the actual section. This is needed due to the
  *  static nav bar blocking the content behind it if not used.
  */
-.anchorLink {
+.anchor-link {
     display: block;  /* display: none will break anchor links */
     visibility: hidden;
-    height: 3rem;
-    margin-top: -2rem;
+    height: 4rem;
+    margin-top: -4rem;
 }
 
 #banner-text {
