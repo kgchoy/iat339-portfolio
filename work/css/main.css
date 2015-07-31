@@ -734,7 +734,7 @@ ol li{
     clear: both;
 }
 
-.full-width-image {
+.full-width-image, .full-width-figure img {
     width: 100%;
 }
 
