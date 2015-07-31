@@ -33,6 +33,7 @@
 
 .col-3of3 {
     float: none;
+    clear: both;
 }
 
 .col-3of3 h1 {
