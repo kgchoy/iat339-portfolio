@@ -107,7 +107,7 @@ header {
 }*/
 
 /* Styling for the navigation button */
-p a {
+p a, li a {
     /*color: inherit;*/
     color: rgb(0, 155, 223);
     font-weight: 600;
