@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BCcampus.ca Usability Testing &ndash; Kevin Choy</title>
+
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/grid.css" rel="stylesheet">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700italic,400italic,700,600,600italic,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,700italic,600italic,400italic' rel='stylesheet' type='text/css'>
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav id="nav-header"> <!-- banner -->
+                <div id="centered-nav-container">
+                    <div id="nav-bar-main">
+                        <div id="nav-bar-left">
+                            <div id="nav-bar-logo"><a href="index.html"><img src="img/logo.png" width="45"></a></div>
+                            <div id="site-name"><a href="index.html">Kevin Choy</a></div>
+                        </div> <!-- ./nav-bar-left -->
+                        <div id="nav-bar-right">
+                            <ul class="menu-items-list">
+                                <li><a class="button-nav button-header-nav" href="about.html">About</a></li>
+                                <li><a class="button-nav button-header-nav" href="index.html#featured-work">Work</a></li>
+                                <li><a class="button-nav button-header-nav" href="#">Contact</a></li>
+                            </ul>
+                        </div> <!-- ./nav-bar-right -->
+                    </div> <!-- ./nav-bar-main -->
+                </div> <!-- ./centered-nav-container -->
+            </nav>
+        </header>
+
+        <div id="page-container">
+
+            <div class="grid">
+                <div class="col-3of3">
+                <article id="first-article" class="article-container">
+                    <h1>Notif Concept Mapping Tool</h1>
+                </article>
+            </div>
+
+            <div class="grid">
+                <div class="col-1of3Main" id="work-sidebar">
+                    <h4>Role</h4>
+                    <p>
+                        User researcher, usability test designer and coordinator, prototype developer, technical writer
+                    </p>
+
+                    <h4>Year / Time Taken</h4>
+                    <p>
+                        2015, two and a half months
+                    </p>
+
+                    <h4>Relevant Programs and Tools</h4>
+                    <p>
+                        Photoshop, Illustrator, Flash, UMLet
+                    </p>
+
+                    <h4>Collaborators</h4>
+                    <p>
+                        Artur Gimenes<br>
+                        Henry Lo<br>
+                        Colin To
+                    </p>
+                </div> <!-- ./col-1of3Main -->
+
+
+                <div class="col-2of3">
+                    <article class="article-container">
+                        <h2>About</h2>
+
+                        <iframe class="embedded-video" src="https://player.vimeo.com/video/126314801" width="600" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                        <p>
+                            This was a group project for a course that taught user-centred design and software design &amp; development methods. In our team of four, we conceptualized and created a prototype for Notif, a concept mapping tool targeted towards the academic teaching and learning domain.
+                        </p>
+
+                        <p>
+                            What notably sets this apart from existing brainstorming / mind-mapping tools is it is targeted towards the teaching and learning domain in education. For student collaborators, it supports real-time collaboration, and suggests connections between concepts based on the similarities between them. For mentors, such as course instructors, they have the ability to allow students to upload their concept maps to a central folder; our application may aggregate and view a list of the most used connections between concepts, and additionally mass publish feedback to students with those connection patterns.
+                        </p>
+
+                        
+                    </article>
+
+                    <article class="article-container">
+                        <h2>Process</h2>
+                    </article>
+
+                    <article class="article-container">
+
+
+                        <h3>Phase 1: Ideation, and Understanding Our Users and Application Domain</h3>
+                        <p>
+                            During this phase, one of my main tasks in the group was to research methods for students to learn effectively, as well as existing concept mapping tools and what their deficiencies were. I found that existing concept mapping tools, such as <a href="http://mind42.com/">Mind42</a>, weren't very suitable for the teaching and learning domain. For students to think critically and ideate, collaboration with other peers, instructors, and mentors is important, as well as easily refer to rich media sources, such as video or audio, that are related the topic at hand. Existing tools lack the ability to do this.
+                        </p>
+
+                        <p>
+                            Furthermore, I worked with the rest of the group to create six scenarios in which existing tools and learning methods weren't effective, but our proposed idea would help. Such scenarios include:
+                        </p>
+
+                        <ul>
+                            <li>A group of four students brainstorming for a team project</li>
+                            <li>A high school teacher having his class construct a concept map, then giving out feedback to all his students</li>
+                        </ul>
+                        
+                    </article>
+
+                    <article class="article-container">
+
+                        <h3>Phase 2: Designing the System</h3>
+
+                        <p>
+                            During this phase, we collaboratively developed use cases to describe the flow of functions in which a user might do to accomplish a task.
+                        </p>
+
+                        <figure class="full-width-figure">
+                            <a href="img/notif/use-case-2.png"><img src="img/notif/use-case-2.png" alt="Use case 2: Produce idea" class="full-width-image"></a>
+                            <figcaption>An example of a use case</figcaption>
+                        </figure>
+
+                        <p>
+                            Furthermore, we also came up with the functional and non-functional requirements that our application would need to include, such as annotating a concept node and enabling live collaborative editing, respectively.
+                        </p>
+
+                        <p>
+                            Finally, we came up with UML diagrams to plan out how the components of our application would look like from a high-level technical point of view.
+                        </p>
+
+                        <figure class="full-width-figure">
+                            <a href="img/notif/object-diagram.png"><img src="img/notif/object-diagram.png" alt="The object diagram in UML form" class="full-width-image"></a>
+                            <figcaption>The object diagram in UML form</figcaption>
+                        </figure>
+
+                        <figure class="full-width-figure">
+                            <a href="img/notif/phase-2-screenshot.png"><img src="img/notif/phase-2-screenshot.png" alt="Screenshot of a mockup of use case 5: comment on ideas"></a>
+                            <figcaption>Screenshot of a Phase 2 mockup of use case 5: comment on ideas</figcaption>
+                        </figure>
+                        
+                    </article>
+
+                </div> <!-- ./col-2of3 -->
+
+            </div> <!-- ./grid -->
+
+        </div> <!-- ./page-container -->
+
+        <!-- load scripts at the end of the page to decrease loading times -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+
+</html>

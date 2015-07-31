@@ -881,3 +881,15 @@ footer{
     height: auto;
     display: block;
 }
+
+.embedded-video {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* begin taking up the full width of its parent container */
+@media (max-width: 62.5rem) {
+    .embedded-video {
+        width: 100%;
+    }
+}
