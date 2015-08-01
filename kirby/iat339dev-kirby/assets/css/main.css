@@ -1,0 +1,899 @@
+/*
+ *  Main CSS for the portfolio website. For CSS related to the site's grids, see grid.css.
+ */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section:not([id]) {
+    margin: 1em 0;
+    padding: 0.5em 0;
+    border-top: 1px solid #333;
+}
+
+section h3 {
+    margin-bottom: 0;
+}
+
+section p {
+    margin-top: 0;
+}
+
+section code {
+    background-color: #EEE;
+    padding: 0.5em 0.75em;
+    margin-top:0.25rem;
+    color:black;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 155, 223);
+    clear: both;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100; /* layer above everything else on the*/
+    border-bottom: solid rgb(0, 155, 223) 0.25em;
+}
+
+.floatClear{
+    clear:both;
+}
+
+.majorSection{
+    margin-top: 2rem;
+}
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    display: inline-block;      /* make the button inline, but preserve block properties such as margins */
+    padding: 0.75em 1.5em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 155, 223);
+    font-size: 1.25rem;
+    text-decoration: none;      /* no underline */
+}
+
+.full-width-button {
+    width: 100%;
+    display: block;
+    margin-top: 0.25em;
+    margin-bottom: 0.75em;
+    font-size: 1.1rem;
+    border-radius: 0.6em;
+}
+
+/* Reduce horizontal button padding */
+@media (max-width: 65rem) {
+    .button-nav {
+        padding: 0.5em 0.5em;
+    }
+}
+
+/* Reduce to thinner weight of font */
+@media (max-width: 40rem) {
+    .button-nav {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+}
+
+.menu-items-list .button-nav:hover {
+    color: rgb(255, 0, 0);
+    vertical-align: bottom;
+}
+
+/* For button hover stste */
+.button-nav:hover {
+    background-color: rgb(0, 110, 158);  /* a darker shade of red as the background colour of the button */
+}
+
+#menuButton {
+    display: none;
+}
+
+/*@media (max-width: 39.5rem) {
+    #menuButton {
+        display: block;
+    }
+}*/
+
+/* Styling for the navigation button */
+p a, li a {
+    /*color: inherit;*/
+    color: rgb(0, 155, 223);
+    font-weight: 600;
+    /*text-decoration: none;*/
+}
+
+.showHiddenContentButton, .showHiddenContentButton:visited {
+  font-style: normal;
+  background-color: rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  border: 0.125em solid rgb(60, 60, 60);
+  border-radius:0.4rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  margin: 1.25em 0;
+
+  /* when hovering over the button with a mouse, change to the "pointer" icon. not all browsers seem to support
+     showing the pointer when mousing over a button element without declaring this */
+  cursor: pointer;
+}
+
+.showHiddenContentButton:focus {
+  outline: 0; /* hide blue border when clicked*/
+}
+
+.showHiddenContentButton:hover {
+  background-color: rgb(60, 60, 60);
+}
+
+/*
+ *  Styling for submit button on a lighter background.
+ *  The :active selector is here so that the button will remain the lighter shade of blue even
+ *  after it is clicked.
+ */
+.buttonGeneric, .buttonGeneric:visited, .buttonGeneric:active {
+    background-color: rgb(0, 155, 223);
+    color:rgb(255, 255, 255);
+    padding: 0.5em 1em;
+    font-size:1.125rem;
+    border-radius: 0.6em;
+    border: 0.125em solid #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
+
+/* Display a lighter shade of blue for both versions of the button */
+.buttonGeneric:hover, .buttonGenericOnDark:hover {
+  background-color: rgb(44, 44, 230);
+}
+
+.checkoutButton{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hugRight{
+  margin-left: auto;
+  margin-right: 0.5rem;
+  display: block;
+}
+
+.absoluteBottomRight{
+  position:absolute;
+  top: auto;
+  bottom: 0.5rem;
+  left: auto;
+  right: 0.5rem;
+  display: block;
+  
+}
+
+#newAccount{
+    width: 30em;
+    margin: 0.25rem 0;
+    overflow:hidden;
+}
+
+/* full width form field */
+.fieldFull{
+    width: 100%;
+    width: -webkit-calc(100% - 4px);
+    width: -moz-calc(100% - 4px);
+    width: calc(100% - 4px);
+    margin: 0.25rem 0;
+    padding: 0.25em 0;
+}
+
+/* half width form field, left side on 2-column layout */
+.fieldHalfL{
+    width:48%;
+    margin: 0.25rem 0;
+    float:left;
+    padding: 0.25em 0;
+}
+
+/* half width form field, right side on 2-column layout */
+.fieldHalfR{
+    width:48%;
+    margin: 0.25rem 0;
+    float:right;
+    padding: 0.25em 0;
+}
+
+/* properties for form fields within a 2-column structure, when both columns are identical */
+.fieldHalf {
+    width: 100%;
+    margin: 0.125rem 0;
+    padding: 0.5em 0.5em;
+    font-size: 0.9rem;
+    margin-bottom:0.5rem;
+}
+
+.fieldTextarea {
+    width: 100%;
+}
+
+/* for textarea field - all properties below needed to override default css */
+.commentsTextareaFull {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  padding: 0.5em 0.5em;
+  width: 100%;
+  height: 8em;
+}
+
+/* for feedback page's textarea fields */
+.feedbackTextareaFull {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  padding: 0.5em 0.5em;
+  width: 31rem;
+  height: 8em;
+  margin-bottom: 2em;
+}
+
+@media(max-width: 35rem) {
+    .feedbackTextareaFull {
+        width: 95%;
+    }
+}
+
+/* add extra vertical spacing after the form */
+.mainPageFormGridFullWidth .commentsTextareaFull {
+    margin-bottom: 0.8em;
+}
+
+input {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.formLabel {
+  margin-top:0.5rem;
+}
+
+/* 
+  TEXT AND VISUAL ELEMENTS -------------------
+*/
+#first-article {
+    margin-top: 6rem;
+}
+
+#site-name{
+    color: rgb(0, 155, 223);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    float: left;
+    margin-left: 0.3em;
+}
+
+
+#site-name a, #site-name a:visited {
+    text-decoration: none;
+    color: rgb(0, 155, 223);
+}
+
+#site-name a:hover {
+    color: rgb(255, 0, 0);
+}
+
+#nav-bar-logo {
+    vertical-align: bottom;
+    float: left;
+}
+
+h1 {
+    color: rgb(0, 155, 223);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    color: rgb(0, 155, 223);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+h3 {
+    color: rgb(0, 155, 223);
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 0.75em;
+    margin-bottom: 0.35em;
+}
+
+h2 a, h3 a {
+    text-decoration: none;
+    color: rgb(0, 155, 223);
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.button-nav:hover {
+    color: rgb(255, 255, 255);
+}
+
+h4 {
+    color: rgb(0, 155, 223);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin:0;
+    margin-bottom: 0.75em;
+}
+
+#work-sidebar h4:not(:first-child) {
+    margin-top: 2em;
+}
+
+.col-2of3 h3 {
+    margin-top: 1.25em;
+}
+
+.menu-items-list{
+    list-style-type: none;
+    height: 100%;
+}
+
+.menu-items-list li{
+/*  display:inline-block;*/
+}
+
+.menu-items-list .button-header-nav {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 155, 223);
+}
+
+/* for header nav buttons, swap padding for margin so to reduce the amount of
+   whitespace that is clickable */
+.button-header-nav {
+    padding: 0.75em 0.75em;
+    margin: 0 0.75em;
+}
+
+@media (max-width: 47rem) {
+    .button-header-nav {
+        margin: 0;
+    }
+}
+
+ol{
+    padding-left:2em;
+    margin:0.5em 0;
+}
+
+ol li{
+    margin:0.125em 0;
+}
+
+.biggerText {
+    font-size: 1.25rem;
+}
+
+/*
+ *  Invisible tag used as an anchor, offsetted above the actual section. This is needed due to the
+ *  static nav bar blocking the content behind it if not used.
+ */
+.anchor-link {
+    display: block;  /* display: none will break anchor links */
+    visibility: hidden;
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+#banner-text {
+    margin-bottom: 4em;
+}
+
+#banner-text p {
+    font-weight: 700;
+    font-size: 2.1rem;
+    margin: 0.5em 0;
+}
+
+.partial-width-button {
+    font-size: 1.2rem;
+    border-radius: 0.6em;
+
+}
+
+@media (max-width: 36rem) {
+    #banner-text p {
+        font-size: 1.5rem;
+    }
+
+    .partial-width-button {
+        font-size: 1rem;
+    }
+}
+
+
+/* Navigation elements */
+
+/* Container for header navigation menu, which is centered and has padding on both sides for
+   whitespace */
+#centered-nav-container {
+
+}
+
+/* Container for footer navigation menu, which is centered and has padding on both sides for
+   whitespace. Identical to header nav menu, but the positioning isn't set as fixed. */
+#centeredFooterContainer {
+    background-color: rgb(255, 255, 255);
+    clear: both;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+/* Reduce the padding */
+/*@media (max-width: 80rem) {
+    #centered-nav-container, #centeredFooterContainer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}*/
+
+/* The actual centered navigation bar itself */
+#nav-bar-main, #footerBar {
+    clear: both;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 155, 223);
+    width: 80%;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2.5em;
+}
+/*
+#nav-header{
+  position: fixed;
+  z-index: 11;
+  right: 0;
+  left: 0;
+}*/
+
+@media (max-width: 85rem) {
+    #nav-bar-main, #footerBar {
+        width: 90%;
+    }
+}
+
+@media (max-width: 75rem) {
+    #nav-bar-main, #footerBar {
+        width: 100%;
+    }
+}
+
+/* Remove the bullets and margin/padding from the nav list */
+#nav-bar-main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#nav-bar-left {
+    float: left;
+    clear: both;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+#nav-bar-left ul {
+    float: left;
+    clear: both;
+}
+
+/* For the left side of the navigation (Browse/About Us/Contact Us) */
+#nav-bar-left ul li {
+    float: left;
+}
+
+/* Float the right side of the navigation (log in/register and cart) to the right */
+#nav-bar-right {
+    float: right;
+    height: 100%;
+    vertical-align: bottom;
+ }
+
+#fullscreenMenuContainer {
+    visibility: hidden;
+}
+
+#footerBarLeft {
+    float: left;
+    clear: both;
+}
+
+#footerBarLeft ul {
+    float: left;
+    clear: both;
+}
+
+#footerBarLeft ul li {
+    float: left;
+}
+
+/* Remove the bullets and margin/padding from the nav list */
+#footerBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#footerBarLeft {
+    float: left;
+    clear: both;
+}
+
+#footerBarLeft ul {
+    float: left;
+    clear: both;
+}
+
+#footerBarRight ul li {
+    float: left;
+}
+
+#footerBarRight {
+    float: right;
+}
+
+/* Collapse the right-hand menu options into a second row */
+@media (max-width: 39.5rem) {
+    #nav-bar-main {
+        width: 100%;
+    }
+
+    #nav-bar-right {
+        float: right;
+    }
+
+/*    #nav-bar-right .button-nav {
+        font-size: 1rem;
+    }*/
+
+    /* Styling for submit button on a dark background. */
+    #menuButton, #menuButton:visited, #menuButton:active {
+        background-color:rgb(0, 155, 223);
+        color:#ffffff;
+        padding: 0.25em 1em;
+        font-size:1.125rem;
+        border-radius:0.4rem;
+        border: 0.125em solid #ffffff;
+        cursor: pointer;
+        margin-top: 0.3rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-variant: small-caps;
+    }
+
+    /* Display a lighter shade of blue for both versions of the button */
+    #menuButton:hover {
+      background-color: rgb(44, 44, 230);
+    }
+  
+    .menuButtonFlashUp{
+        background-color: rgb(44, 44, 230);
+    }
+
+    #fullscreenMenuContainer {
+        visibility: hidden;
+        position: fixed;
+        background-color: rgb(0, 155, 223);
+        width: 100%;
+        height: 100%;  /* have the menu occupy the full screen height */
+        z-index: 98;
+        clear: both;
+        overflow: hidden;
+    }
+
+    .menu-items-list {
+        width: 100%;
+        margin-top: 3.5em;
+        padding-left: 1.5em;
+        clear: both;
+    }
+
+    .expand {
+      visibility: visible;
+    }
+
+    #site-name {
+        display: none;
+    }
+
+}
+
+@media (max-width: 30.8rem) {
+    #nav-bar-right {
+        /*float: left;*/
+        /*clear: both;*/
+    }
+
+    #nav-bar-right .button-nav {
+        margin-top: 0;
+        padding: 0.75em 0.75em;
+        margin: 0;
+    }
+}
+
+@media (max-width: 50.75rem) {
+    #nav-bar-main {
+        padding: 0 1.85em;
+    }
+}
+
+@media (max-width: 27rem) {
+    #nav-bar-right {
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+    }
+
+    #nav-bar-right .button-nav {
+        font-size: 1rem;
+    }
+}
+
+/* text and interactive elements for very small screens */
+@media (max-width: 23rem) {
+    #site-name {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    #menuButton, #menuButton:visited, #menuButton:active {
+        font-size: 1.2rem;
+    }
+
+    #nav-bar-right .button-nav {
+        font-size: 0.875rem;
+    }
+
+    #centered-nav-container {
+        /*padding-top: 0.3rem;*/
+        /*padding-bottom: 0.6rem;*/
+    }
+
+    .buttonGeneric, .buttonGeneric:visited, .buttonGeneric:active, 
+      .buttonGenericOnDark, .buttonGenericOnDark:visited, .buttonGeneric:active {
+        font-size:1.05rem;
+    }
+
+}
+
+/* After floating to the right, this sets the order of the menu items in the correct order */
+#nav-bar-right ul li {
+    float: left;
+}
+
+/* css for the site structure */
+#bodyContainer{
+  width: 70rem;
+  position: relative;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0.75rem;
+  margin-top: 3rem;
+}
+
+#bodyContainerCheckout{
+  width: 70rem;
+  position: relative;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0.75rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+@media(max-width: 71rem){ /*media query for if the page width became too smaller than the max possible width of the content*/
+    #bodyContainer{
+        width: 100%;
+    }
+  #bodyContainerCheckout{
+    width: 100%;
+  }
+}
+
+.hide {
+  display: none; /* completely remove the content from the page */
+}
+
+.show {
+  display: inline;
+}
+
+/*
+ *  This is for the container that contains each section that describes the hotel facilities,
+ *  the trip experience, and so on.
+ */
+.article-container {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+}
+
+.full-width-image, .full-width-figure img {
+    width: 100%;
+}
+
+.full-width-figure {
+    width: 100%;
+    margin: 1em 0;
+}
+
+figcaption {
+    font-style: italic;
+    color: rgb(150, 150, 150);
+}
+
+#page-container, #nav-bar-main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*@media(max-width: 85rem) {
+    #page-container {
+        width: 90%;
+    }
+
+    #nav-bar-main {
+        width: 90%;
+        padding: 0;
+    }
+}*/
+
+@media(max-width: 87rem) {
+    #page-container, #nav-bar-main {
+        width: 100%;
+    }
+}
+
+/*@media(max-width: 60rem) {
+    #page-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}*/
+
+@media(max-width: 71rem) {
+    .article-container {
+        width: 100%;
+    }
+}
+
+.col-1of3Main figcaption {
+    margin-top: 0.5em;
+}
+
+.multiSelect{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.quantitativeFeedback{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.quantitativeFeedback h3 {
+    margin-top: 1rem;
+}
+
+.multiSelectOption{
+  display: block;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.feedbackSubmit{
+  display: block;
+  margin-top: 1rem;
+}
+
+footer{
+  height:3rem;
+  background-color: rgb(0, 155, 223);
+}
+
+/* table of booking costs on the checkout page */
+.bookingCosts {
+    width: 100%;
+    font-size: 1.15rem;
+    margin-bottom: 2em;
+}
+
+.bookingCostsDescColumn {
+    width: 70%;
+    vertical-align: top;
+    padding: 0.25em 0.5em 0.25em 0;
+}
+
+.bookingCostsAmountColumn {
+    width: 30%;
+    vertical-align: top;
+    padding: 0.25em 0 0.5em 0.25em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.lastRow {
+    border-top: 0.08rem solid #AAAAAA;
+    padding-top: 0.75em;
+}
+
+.bookingCosts th {
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: underline;
+}
+
+#startBooking {
+    margin-bottom: 2em;
+}
+
+#work-sidebar {
+    background: none;
+}
+
+@media (max-width: 50.75rem) {
+    #work-sidebar {
+        background-color: rgb(240, 240, 240);
+    }
+}
+
+.main-work-listing-figure img {
+    border: 1px solid #cccccc;
+}
+
+/*header:after, #nav-bar-main, #centered-nav-container {
+    clear: both;
+}*/
+
+.menu-items-list:after {
+    /* clearfix to prevent zero-height element */
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#nav-header {
+    height: auto;
+    display: block;
+}
+
+.embedded-video {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* begin taking up the full width of its parent container */
+@media (max-width: 62.5rem) {
+    .embedded-video {
+        width: 100%;
+    }
+}
+
+.semiopaque-type {
+    color: rgb(150, 150, 150);
+}
