@@ -862,6 +862,10 @@ footer{
     }
 }
 
+#process-section h2, #outcomes-section h2 {
+    margin-top: 2em;
+}
+
 .main-work-listing-figure img {
     border: 1px solid #cccccc;
 }
@@ -882,14 +886,14 @@ footer{
     display: block;
 }
 
-.embedded-video {
+.embedded-video, figure iframe {
     margin-left: 0;
     padding-left: 0;
 }
 
 /* begin taking up the full width of its parent container */
 @media (max-width: 62.5rem) {
-    .embedded-video {
+    .embedded-video, figure iframe {
         width: 100%;
     }
 }

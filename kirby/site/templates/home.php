@@ -11,7 +11,7 @@
                             <?php echo $page->main_banner_text() ?>
                         </p>
 
-                        <a class="button-nav partial-width-button" href="about.html">About Me&nbsp;&nbsp;&rsaquo;&rsaquo;</a>
+                        <a class="button-nav partial-width-button" href="<?php echo page('about') ?>">About Me&nbsp;&nbsp;&rsaquo;&rsaquo;</a>
 
                     </div>
                 </article>

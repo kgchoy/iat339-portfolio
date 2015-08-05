@@ -12,10 +12,6 @@
 
     <div class="grid">
         <div class="col-1of3Main" id="work-sidebar">
-            <h4>Links &amp; Resources</h4>
-            <a class="button-nav full-width-button" href="http://www.bccampus.ca">BCcampus.ca&nbsp;&nbsp;&rsaquo;&rsaquo;</a>
-            <a class="button-nav full-width-button" href="content/2-bccampus/bccampus-website-usability-test-report.pdf">View Full Usability Test Report&nbsp;&nbsp;&rsaquo;&rsaquo;</a>
-
             <h4>Categories</h4>
             <p>
                 <?php echo $page->categories() ?>
