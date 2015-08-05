@@ -14,4 +14,4 @@ Keywords:
 
 ----
 
-Copyright: © 2009-(date: Year) Kevin Choy unless otherwise noted.
+Copyright: &copy; (date: Year) Kevin Choy unless otherwise noted.

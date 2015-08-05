@@ -355,20 +355,20 @@ h4 {
 /*  display:inline-block;*/
 }
 
-.menu-items-list .button-header-nav {
+.menu-items-list .button-header-nav, .menu-items-list .button-footer-nav {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 155, 223);
 }
 
 /* for header nav buttons, swap padding for margin so to reduce the amount of
    whitespace that is clickable */
-.button-header-nav {
+.button-header-nav, .button-footer-nav {
     padding: 0.75em 0.75em;
     margin: 0 0.75em;
 }
 
 @media (max-width: 47rem) {
-    .button-header-nav {
+    .button-header-nav, .button-footer-nav {
         margin: 0;
     }
 }
@@ -900,4 +900,10 @@ footer{
 
 .semiopaque-type {
     color: rgb(150, 150, 150);
+}
+
+.icon {
+    color: rgb(0, 155, 223);
+    /*border: 0.125em solid rgb(0, 155, 223);*/
+    padding: 0.125em;
 }
