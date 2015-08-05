@@ -1,16 +1,18 @@
-Title: About
+Title: About Me
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+About-Section:
 
-## Lorem Ipsum
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
+I'm a student from Vancouver, British Columbia, currently studying at Simon Fraser University where I am majoring in Interactive Arts &amp; Technology with a concentration in Interactive Systems and minoring in Computing Science. My related academic interests include user experience design and interaction design.
 
-(image: about.jpg)
+My design philosophy is guided by minimalism and simplicity, where I believe that the aesthetic aspect of a product should be secondary to functional considerations. Elements should not be flashy without reason.
 
-### Lorem Ipsum
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+I have also had a lifelong interest in the study of human geography&mdash;particularly urban studies and the geography of transportation. This, too, has shaped my creative design process, as well as the types of design topics I explore.
 
-#### Lorem Ipsum
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+In my spare time, I also enjoy activities such as hiking, board &amp; tabletop games, badminton, and retrogaming. I am an active member and executive of the Burnaby Mountain Toastmasters public speaking club.
+
+----
+
+Profile-Image:
+(image: profile-picture.jpg alt: Photo of Kevin Choy)
