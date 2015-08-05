@@ -17,7 +17,7 @@
             
             <div class="col-2of3-work-description">
                 <div class="work-description">
-                    <h3><a href="bccampus.html">BCcampus.ca Usability Testing</a></h3>
+                    <h3><a href="<?php echo page('bccampus') ?>">BCcampus.ca Usability Testing</a></h3>
                     <em>UX research &#149; usability testing</em>
                     <p>
                         I created and facilitated a usability test for the BCcampus.ca website to find out whether the audience could perform typical tasks on the website easily, and to discover usability problems.
@@ -33,7 +33,7 @@
             
             <div class="col-1of3-work-figure">
                 <div class="main-work-listing-figure">
-                    <figure>
+                    <figure class="notif-image">
                         <a href="notif.html"><img src="content/home/notif-thumb.png" alt="Notif use case screenshot"></a>
                     </figure>
                 </div>

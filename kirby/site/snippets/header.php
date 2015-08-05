@@ -26,19 +26,20 @@
                 <div id="nav-bar-main">
                     <div id="nav-bar-left">
                         <div id="nav-bar-logo">
-                            <a class="logo" href="<?php echo url() ?>">
+                            <a class="logo" href="<?php echo page('home') ?>">
                                 <img src="<?php echo url('assets/images/logo.png') ?>" alt="<?php echo $site->title()->html() ?>" width="45" height="45" />
                             </a>
 
                         </div>
-                        <div id="site-name"><a href="index.html">Kevin Choy</a></div>
+                        <div id="site-name"><a href="<?php echo page('home') ?>">Kevin Choy</a></div>
                     </div> <!-- ./nav-bar-left -->
                     <div id="nav-bar-right">
                         <ul class="menu-items-list">
-                            <li><a class="button-nav button-header-nav" href="about.html">About</a></li>
-                            <li><a class="button-nav button-header-nav" href="index.html#featured-work">Work</a></li>
+                            <li><a class="button-nav button-header-nav" href="<?php echo page('about') ?>">About</a></li>
+                            <li><a class="button-nav button-header-nav" href="<?php echo page('home') . '#featured-work' ?>">Work</a></li>
                             <li><a class="button-nav button-header-nav" href="contact.html">Contact</a></li>
                         </ul>
+
                     </div> <!-- ./nav-bar-right -->
                 </div> <!-- ./nav-bar-main -->
             </div> <!-- ./centered-nav-container -->

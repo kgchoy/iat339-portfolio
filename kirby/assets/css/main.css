@@ -734,11 +734,11 @@ ol li{
     clear: both;
 }
 
-.full-width-image, .full-width-figure img {
+.full-width-image, .full-width-figure img, .article-container figure, .article-container figure img {
     width: 100%;
 }
 
-.full-width-figure {
+.full-width-figure, .article-container figure {
     width: 100%;
     margin: 1em 0;
 }
