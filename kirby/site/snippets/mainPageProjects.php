@@ -10,7 +10,7 @@
             <div class="col-1of3-work-figure">
                 <div class="main-work-listing-figure">
                     <figure>
-                        <a href="bccampus.html"><img src="img/bcc-website-screenshot-cropped.jpg" alt="BCcampus website screenshot"></a>
+                        <a href="bccampus.html"><img src="content/home/bcc-website-screenshot-cropped.jpg" alt="BCcampus website screenshot"></a>
                     </figure>
                 </div>
             </div>
@@ -34,7 +34,7 @@
             <div class="col-1of3-work-figure">
                 <div class="main-work-listing-figure">
                     <figure>
-                        <a href="notif.html"><img src="img/notif-thumb.png" alt="Notif use case screenshot"></a>
+                        <a href="notif.html"><img src="content/home/notif-thumb.png" alt="Notif use case screenshot"></a>
                     </figure>
                 </div>
             </div>
