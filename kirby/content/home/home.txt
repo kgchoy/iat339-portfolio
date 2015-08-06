@@ -4,8 +4,4 @@ Title: Main Page
 
 Main-Banner-Text:
 
-I'm a user experience researcher/developer and desktop, web, and mobile developer based in Vancouver, British Columbia.
-
-----
-
-Work-Listing-Image: (image: about.jpg)
+I'm a user experience researcher, interaction designer, and application developer based in Vancouver, British Columbia.
