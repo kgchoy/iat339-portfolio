@@ -303,6 +303,10 @@ input {
     float: left;
 }
 
+#nav-bar-logo a img:hover {
+    border: 0.15em solid rgb(255, 0, 0);
+}
+
 h1 {
     color: rgb(0, 155, 223);
     font-weight: 700;
