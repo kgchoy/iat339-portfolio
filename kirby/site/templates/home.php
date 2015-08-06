@@ -7,9 +7,7 @@
             <div class="col-3of3">
                 <article id="first-article" class="article-container">
                     <div id="banner-text">
-                        <p>
-                            <?php echo $page->main_banner_text() ?>
-                        </p>
+                        <?php echo $page->main_banner_text()->kirbytext() ?>
 
 
                         <a class="button-nav partial-width-button" href="<?php echo page('about') ?>">About Me&nbsp;&nbsp;&rsaquo;&rsaquo;</a>
@@ -18,20 +16,9 @@
                 </article>
 
                 <?php snippet('mainPageProjects') ?>
-            </div>
-        </div>
-    </div>
 
-
-<!--     <div class="text">
-      <h1><?php echo $page->title()->html() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
-    </div>
-
-    <hr>
-
-    <?php snippet('projects') ?> -->
-
-  <!-- </main> -->
+            </div> <!-- ./col-3of3 -->
+        </div> <!-- ./grid -->
+    </div> <!-- ./page-container -->
 
 <?php snippet('footer') ?>

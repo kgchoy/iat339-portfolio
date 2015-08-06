@@ -12,9 +12,8 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,700italic,600italic,400italic' rel='stylesheet' type='text/css'>
 
     <?php echo css('assets/css/main.css') ?>
-    <?php echo css('assets/css/grid.css') ?>
-    <?php echo css('assets/css/open-iconic.min.css') ?>
 
+    <?php echo css('assets/css/grid.css') ?>
 
 </head>
 
@@ -43,5 +42,5 @@
                     </div> <!-- ./nav-bar-right -->
                 </div> <!-- ./nav-bar-main -->
             </div> <!-- ./centered-nav-container -->
-        </nav>
+        </nav> <!-- ./banner -->
     </header>

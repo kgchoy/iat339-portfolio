@@ -438,7 +438,7 @@ ol li{
 
 /* Container for footer navigation menu, which is centered and has padding on both sides for
    whitespace. Identical to header nav menu, but the positioning isn't set as fixed. */
-#centeredFooterContainer {
+#footer-container {
     /*background-color: rgb(255, 255, 255);*/
     clear: both;
     left: 0;
@@ -449,14 +449,14 @@ ol li{
 
 /* Reduce the padding */
 /*@media (max-width: 80rem) {
-    #centered-nav-container, #centeredFooterContainer {
+    #centered-nav-container, #footer-container {
         padding-left: 5%;
         padding-right: 5%;
     }
 }*/
 
 /* The actual centered navigation bar itself */
-#nav-bar-main, #footerBar {
+#nav-bar-main, #footer-bar-main {
     clear: both;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 155, 223);
@@ -475,13 +475,13 @@ ol li{
 }*/
 
 @media (max-width: 85rem) {
-    #nav-bar-main, #footerBar {
+    #nav-bar-main, #footer-bar-main {
         width: 90%;
     }
 }
 
 @media (max-width: 75rem) {
-    #nav-bar-main, #footerBar {
+    #nav-bar-main, #footer-bar-main {
         width: 100%;
     }
 }
@@ -522,43 +522,43 @@ ol li{
     visibility: hidden;
 }
 
-#footerBarLeft {
+#footer-bar-left {
     float: left;
     clear: both;
 }
 
-#footerBarLeft ul {
+#footer-bar-left ul {
     float: left;
     clear: both;
 }
 
-#footerBarLeft ul li {
+#footer-bar-left ul li {
     float: left;
 }
 
 /* Remove the bullets and margin/padding from the nav list */
-#footerBar ul {
+#footer-bar-main ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 
 }
 
-#footerBarLeft {
+#footer-bar-left {
     float: left;
     clear: both;
 }
 
-#footerBarLeft ul {
+#footer-bar-left ul {
     float: left;
     clear: both;
 }
 
-#footerBarRight ul li {
+#footer-bar-right ul li {
     float: left;
 }
 
-#footerBarRight {
+#footer-bar-right {
     float: right;
 }
 
@@ -569,7 +569,7 @@ ol li{
 }
 
 @media (max-width: 41rem) {
-    #footerBarRight li {
+    #footer-bar-right li {
         clear: both;
     }
 }
@@ -649,7 +649,7 @@ ol li{
 }
 
 @media (max-width: 50.75rem) {
-    #nav-bar-main, #footerBar {
+    #nav-bar-main, #footer-bar-main {
         padding: 0 1.85em;
     }
 
@@ -778,7 +778,7 @@ figcaption {
 }*/
 
 @media(max-width: 87rem) {
-    #page-container, #nav-bar-main, #footerBar {
+    #page-container, #nav-bar-main, #footer-bar-main {
         width: 100%;
     }
 }
@@ -826,10 +826,14 @@ figcaption {
 }
 
 footer {
-  /*height: 3rem;*/
-  /*background-color: rgb(0, 155, 223);*/
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+    /*height: 3rem;*/
+    /*background-color: rgb(0, 155, 223);*/
+}
+
+#footer-bar-main {
+    border-top: solid rgb(0, 155, 223) 0.08em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 /* table of booking costs on the checkout page */
@@ -924,35 +928,35 @@ footer {
     vertical-align: text-top;
 }*/
 
-#footerBarLeft p {
+#footer-bar-left p {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-#footerBarLeft p {
+#footer-bar-left p {
     font-size: 0.9rem;
 }
 
-#footerBarRight a {
+#footer-bar-right a {
     font-size: 1.15rem;
 }
 
-#footerBarLeft p, #footerBarRight a {
+#footer-bar-left p, #footer-bar-right a {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-#footerBarRight .menu-items-list img {
+#footer-bar-right .menu-items-list img {
     padding-right: 0.5em;
 }
 
 @media (max-width: 71rem) {
-    #footerBarRight {
+    #footer-bar-right {
         clear: both;
         float: none;
     }
 
-    #footerBarRight .menu-items-list {
+    #footer-bar-right .menu-items-list {
         margin: 0;
     }
 
@@ -961,8 +965,4 @@ footer {
         margin-right: 2em;
         padding-left: 0;
     }
-}
-
-@media (max-width: 45rem) {
-
 }
