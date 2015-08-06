@@ -911,7 +911,7 @@ footer {
 }
 
 .main-work-listing-figure img {
-    border: 1px solid #cccccc;
+    border: 0.075rem solid #cccccc;
 }
 
 /*header:after, #nav-bar-main, #centered-nav-container {
@@ -1041,4 +1041,18 @@ footer .menu-items-list li a {
 /* reduce the amount of vertical spacing above the first paragraph on the about page */
 #about-summary > p:first-child {
     margin-top: 0;
+}
+
+.work-page-bottom-buttons {
+    margin-top: 4em;
+}
+
+.right-align-button {
+    text-align: right;
+}
+
+@media (max-width: 50.75rem) {
+    .right-align-button {
+        text-align: left;
+    }
 }

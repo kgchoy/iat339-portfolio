@@ -90,11 +90,11 @@
             <pre><code>
 &lt;form action="reciept.html" method="post" id="startBooking"&gt;
 &lt;div class="grid"&gt;
-    &lt;div class="mainPageFormGridCol-1of2"&gt;
+    &lt;div class="body-gridCol-1of2"&gt;
         &lt;label for="FirstName" class="formLabel"&gt;First Name:&lt;/label&gt;
         &lt;input class="fieldHalf" type="text" id="FirstName" name="FirstName"&gt;
     &lt;/div&gt;
-    &lt;div class="mainPageFormGridCol-2of2"&gt;
+    &lt;div class="body-gridCol-2of2"&gt;
         &lt;label for="LastName" class="formLabel"&gt;Last Name:&lt;/label&gt;
         &lt;input class="fieldHalf" type="text" id="LastName" name="LastName"&gt;
     &lt;/div&gt;
@@ -107,11 +107,11 @@
             <h3>Rendered Element:</h3>
             <form action="reciept.html" method="post" id="startBooking">
                 <div class="grid">
-                    <div class="mainPageFormGridCol-1of2">
+                    <div class="body-gridCol-1of2">
                         <label for="FirstName" class="formLabel">First Name:</label>
                         <input class="fieldHalf" type="text" id="FirstName" name="FirstName">
                     </div>
-                    <div class="mainPageFormGridCol-2of2">
+                    <div class="body-gridCol-2of2">
                         <label for="LastName" class="formLabel">Last Name:</label>
                         <input class="fieldHalf" type="text" id="LastName" name="LastName">
                     </div>
