@@ -16,6 +16,10 @@
                 <?php echo $page->about_section()->kirbytext() ?>
             </article>
 
+            <article class="article-container" id="skills-summary">
+            <?php echo $page->skills_section()->kirbytext() ?>
+            </article>
+
             <a class="button-nav partial-width-button" href="assets/doc/resume.pdf">View My Resume&nbsp;&nbsp;&rsaquo;&rsaquo;</a>
 
         </div> <!-- ./col-2of3 -->
