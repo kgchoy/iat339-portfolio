@@ -88,7 +88,7 @@ header {
 
 .menu-items-list .button-nav:hover {
     color: rgb(255, 0, 0);
-    vertical-align: bottom;
+    /*vertical-align: bottom;*/
 }
 
 /* For button hover stste */
@@ -367,6 +367,10 @@ h4 {
     margin: 0 0.75em;
 }
 
+.button-footer-nav {
+    padding: 0 0.75em;
+}
+
 @media (max-width: 47rem) {
     .button-header-nav, .button-footer-nav {
         margin: 0;
@@ -435,7 +439,7 @@ ol li{
 /* Container for footer navigation menu, which is centered and has padding on both sides for
    whitespace. Identical to header nav menu, but the positioning isn't set as fixed. */
 #centeredFooterContainer {
-    background-color: rgb(255, 255, 255);
+    /*background-color: rgb(255, 255, 255);*/
     clear: both;
     left: 0;
     right: 0;
@@ -558,6 +562,18 @@ ol li{
     float: right;
 }
 
+@media (max-width: 44rem) {
+    #site-name {
+        display: none;
+    }
+}
+
+@media (max-width: 41rem) {
+    #footerBarRight li {
+        clear: both;
+    }
+}
+
 /* Collapse the right-hand menu options into a second row */
 @media (max-width: 39.5rem) {
     #nav-bar-main {
@@ -617,10 +633,6 @@ ol li{
       visibility: visible;
     }
 
-    #site-name {
-        display: none;
-    }
-
 }
 
 @media (max-width: 30.8rem) {
@@ -637,9 +649,10 @@ ol li{
 }
 
 @media (max-width: 50.75rem) {
-    #nav-bar-main {
+    #nav-bar-main, #footerBar {
         padding: 0 1.85em;
     }
+
 }
 
 @media (max-width: 27rem) {
@@ -765,7 +778,7 @@ figcaption {
 }*/
 
 @media(max-width: 87rem) {
-    #page-container, #nav-bar-main {
+    #page-container, #nav-bar-main, #footerBar {
         width: 100%;
     }
 }
@@ -812,9 +825,11 @@ figcaption {
   margin-top: 1rem;
 }
 
-footer{
-  height:3rem;
-  background-color: rgb(0, 155, 223);
+footer {
+  /*height: 3rem;*/
+  /*background-color: rgb(0, 155, 223);*/
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 /* table of booking costs on the checkout page */
@@ -902,16 +917,52 @@ footer{
     color: rgb(150, 150, 150);
 }
 
-.icon {
+/*.footer-icon {
     color: rgb(0, 155, 223);
-    /*border: 0.125em solid rgb(0, 155, 223);*/
+    border: 0.125em solid rgb(0, 155, 223);
     padding: 0.125em;
+    vertical-align: text-top;
+}*/
+
+#footerBarLeft p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#footerBarLeft p {
+    font-size: 0.9rem;
 }
 
 #footerBarRight a {
-    font-size: 1rem;
+    font-size: 1.15rem;
+}
+
+#footerBarLeft p, #footerBarRight a {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 #footerBarRight .menu-items-list img {
     padding-right: 0.5em;
+}
+
+@media (max-width: 71rem) {
+    #footerBarRight {
+        clear: both;
+        float: none;
+    }
+
+    #footerBarRight .menu-items-list {
+        margin: 0;
+    }
+
+    .menu-items-list li a {
+        margin-left: 0;
+        margin-right: 2em;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 45rem) {
+
 }

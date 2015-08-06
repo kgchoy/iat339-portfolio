@@ -27,7 +27,7 @@
                     <div id="nav-bar-left">
                         <div id="nav-bar-logo">
                             <a class="logo" href="<?php echo page('home') ?>">
-                                <p><img src="<?php echo url('assets/images/logo.png') ?>" alt="<?php echo $site->title()->html() ?>" width="45" height="45" /></p>
+                                <img src="<?php echo url('assets/images/logo.png') ?>" alt="<?php echo $site->title()->html() ?>" width="45" height="45" />
                             </a>
 
                         </div>

@@ -14,4 +14,6 @@ Keywords:
 
 ----
 
-Copyright: &copy; (date: Year) Kevin Choy unless otherwise noted.
+Copyright:
+
+&copy; (date: Year) Kevin Choy. Footer icons courtesy of (link: https://useiconic.com/open/ text: Open Iconic) and (link: http://www.socicon.com/ text: Socicon).
