@@ -26,17 +26,17 @@
                     <div id="nav-bar-left">
                         <div id="nav-bar-logo">
                             <a class="logo" href="<?php echo page('home') ?>">
-                                <img src="<?php echo url('assets/images/logo.png') ?>" alt="<?php echo $site->title()->html() ?>" width="45" height="45" />
+                                <img src="<?php echo url('assets/images/logo.png') ?>" alt="<?php echo $site->title()->html() ?>" width="49" height="49" />
                             </a>
 
                         </div>
-                        <div id="site-name"><a href="<?php echo page('home') ?>">Kevin Choy</a></div>
+                        <div id="site-name"><a href="<?php echo page('home') ?>">evin Choy</a></div>
                     </div> <!-- ./nav-bar-left -->
                     <div id="nav-bar-right">
                         <ul class="menu-items-list">
                             <li><a class="button-nav button-header-nav" href="<?php echo page('about') ?>">About</a></li>
                             <li><a class="button-nav button-header-nav" href="<?php echo page('home') . '#featured-work' ?>">Work</a></li>
-                            <li><a class="button-nav button-header-nav" href="contact.html">Contact</a></li>
+                            <li><a class="button-nav button-header-nav" href="mailto:kgchoy@sfu.ca">Email Me</a></li>
                         </ul>
 
                     </div> <!-- ./nav-bar-right -->
