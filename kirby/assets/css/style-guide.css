@@ -3,7 +3,7 @@
  */
 
 /* override the body CSS from the actual site */
-#styleguideBody {
+#style-guide-body {
     background-image: none;
     margin: 1rem;
     padding: 1rem;
@@ -14,7 +14,7 @@
     position: static; /* in the actual site, position is fixed */
 }
 
-#centered-nav-container {
+#centered-nav-container, header {
     /* position is fixed in the actual site; we don't want it fixed at the top in the style guide */
     position: static;
     display: block;
@@ -70,12 +70,12 @@
       padding: 0.5rem 1.5rem;
 }
 
-h1#styleGuideHeader {
+h1#style-guide-header {
     color: black;
 }
 
 /* fix positioning on the contents and citations page to display them statically */
-#styleguideBody #earthBackwards, #styleguideBody #basePad {
+#style-guide-body #earthBackwards, #style-guide-body #basePad {
     position: static;
 }
 

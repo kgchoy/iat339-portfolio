@@ -9,11 +9,11 @@
     <meta name="description" content="<?php echo $site->description()->html() ?>">
     <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,700italic,600italic,400italic' rel='stylesheet' type='text/css'>
-
     <?php echo css('assets/css/main.css') ?>
 
     <?php echo css('assets/css/grid.css') ?>
+
+    <?php echo css('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,700italic,600italic,400italic') ?>
 
 </head>
 

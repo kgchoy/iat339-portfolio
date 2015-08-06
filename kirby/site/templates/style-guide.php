@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Portfolio Style Guide</title>
+
+
+    <?php echo css('assets/css/main.css') ?>
+
+    <?php echo css('assets/css/grid.css') ?>
+
+    <?php echo css('assets/css/style-guide.css') ?>
+
+    <?php echo css('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,700italic,600italic,400italic') ?>
+
+</head>
+
+<body id="style-guide-body">
+
+    <h1 id="style-guide-header">Portfolio Style Guide</h1>
+
+    <nav>
+
+      <p>
+          Go to: <br>
+          <a href="#interactive_elements" class="button-nav">Interactive Elements</a><a href="#text_elements" class="button-nav">Text Elements</a><a href="#other_stuff" class="button-nav">Other stuff</a><a href="#combined_elements" class="button-nav">Combined Elements</a>
+      </p>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+        <!-- Default Button styling section -->
+        <section>
+
+            <h2>Navigation Button</h2>
+
+            <h3>CSS selector:</h3>
+            <p>.button-nav</p>
+
+            <h3>Sample code:</h3>
+            <pre><code> <!-- code inside the pre tag must be formatted like this to display c -->
+&lt;a class="button-nav" href="#"&gt;Link to Project&lt;/a&gt;
+            </code></pre>
+
+            <h3>Rendered element for button-nav:</h3>
+
+            <a class="button-nav" href="#">Link to Project</a>
+
+        </section>
+
+        <section>
+            <h2>In-text link</h2>
+
+            <h3>CSS selectors</h3>
+
+            <p>p a</p>
+
+            <h3>Sample Code</h3>
+
+            <pre><code>
+&lt;p&gt;This is a link to &lt;a href="#"&gt;somewhere else on the page&lt;/a&gt; so you should click it.&lt;/p&gt;
+            </code></pre>
+
+            <h3>Rendered Element</h3>
+
+            <p>This is a link to <a href="#">somewhere else on the page</a> so you should click it.</p>
+
+            <h3>Additional Info:</h3>
+
+            <p>The links in a paragraph is italics and underlined. The colour of the links will always inherit the parent's colour.</p>
+        </section>
+
+        <section>
+            <h2>Text Input Field</h2>
+            
+            <h3>CSS selector:</h3>
+            <p>
+                .fieldHalf (for input field)<br>
+                .commentsTextareaFull (for textarea field)<br>
+                .formLabel (for label)
+            </p>
+            
+            <h3>Sample code:</h3>
+            <pre><code>
+&lt;form action="reciept.html" method="post" id="startBooking"&gt;
+&lt;div class="grid"&gt;
+    &lt;div class="mainPageFormGridCol-1of2"&gt;
+        &lt;label for="FirstName" class="formLabel"&gt;First Name:&lt;/label&gt;
+        &lt;input class="fieldHalf" type="text" id="FirstName" name="FirstName"&gt;
+    &lt;/div&gt;
+    &lt;div class="mainPageFormGridCol-2of2"&gt;
+        &lt;label for="LastName" class="formLabel"&gt;Last Name:&lt;/label&gt;
+        &lt;input class="fieldHalf" type="text" id="LastName" name="LastName"&gt;
+    &lt;/div&gt;
+    &lt;label for="creditCard" class="formLabel"&gt;Credit Card Number:&lt;/label&gt;
+    &lt;input class="fieldHalf" type="text" id="creditCard" name="creditCard"&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+            </code></pre>
+            
+            <h3>Rendered Element:</h3>
+            <form action="reciept.html" method="post" id="startBooking">
+                <div class="grid">
+                    <div class="mainPageFormGridCol-1of2">
+                        <label for="FirstName" class="formLabel">First Name:</label>
+                        <input class="fieldHalf" type="text" id="FirstName" name="FirstName">
+                    </div>
+                    <div class="mainPageFormGridCol-2of2">
+                        <label for="LastName" class="formLabel">Last Name:</label>
+                        <input class="fieldHalf" type="text" id="LastName" name="LastName">
+                    </div>
+                    <label for="creditCard" class="formLabel">Credit Card Number:</label>
+                    <input class="fieldHalf" type="text" id="creditCard" name="creditCard">
+                </div>
+            </form>
+
+        </section>
+
+        <h3>Additional Info:</h3>
+        <p>
+            The field width is set to 100% of whatever container it is in. Grids can be used to adjust the width.
+        </p>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+        <section>
+            <h2>Headings</h2>
+
+            <h3>CSS selectors</h3>
+            <p>
+                h1<br>
+                h2<br>
+                h3<br>
+                h4<br>
+            </p>
+
+            <h3>Sample code for H1:</h3>
+            <pre><code>
+    &lt;h1&gt;This is an H1 header&lt;/h1&gt;
+            </code></pre>
+
+            <h3>Rendered Element:</h3>
+            <h1>This is an H1 header</h1>
+
+            <h3>Sample code for H2:</h3>
+            <pre><code>
+&lt;h2&gt;This is an H2 header&lt;/h2&gt;
+            </code></pre>
+
+            <h3>Rendered Element:</h3>
+            <h2>This is an H2 header</h2>
+
+
+            <h3>Sample code for H3:</h3>
+            <pre><code>
+&lt;h3&gt;This is an H3 header&lt;/h3&gt;
+            </code></pre>
+
+            <h3>Rendered Element:</h3>
+            <h3>This is an H3 header</h3>
+
+            <h3>Sample code for H4:</h3>
+            <pre><code>
+&lt;h3&gt;This is an H4 header&lt;/h3&gt;
+            </code></pre>
+
+            <h3>Rendered Element:</h3>
+            <h4>This is an H4 header</h4>
+
+        </section>
+
+        <section>
+            <h2>Paragraphs</h2>
+
+            <h3>CSS selectors</h3>
+
+            <p>p</p>
+
+            <h3>Sample Code</h3>
+
+            <pre><code>
+&lt;p&gt;Est erant eligendi tacimates no, cu quo tollit postulant. At fastidii scaevola cum, at hinc docendi splendide sea. Vix an hendrerit referren tur, graeci posidonium percipitur usu te. Ex natum harum saperet vel, ne duo omnis possit aliquando. Usu ne audiam oblique, ne exerci graece disputationi per, omnis essent ne eum. Eos ne fugit omnium graecis, vix no nulla comprehensam. No sit hendrerit assueverit, id nec eleifend tincidunt voluptatibus. Et rebum placerat pri, nam ne liberavisse conclusion emque. At has alii partem ornatus. Cu melius deseruisse pro.&lt;/p&gt;
+            </code></pre>
+
+            <h3>Rendered Element:</h3>
+
+            <p>Est erant eligendi tacimates no, cu quo tollit postulant. At fastidii scaevola cum, at hinc docendi splendide sea. Vix an hendrerit referren tur, graeci posidonium percipitur usu te. Ex natum harum saperet vel, ne duo omnis possit aliquando. Usu ne audiam oblique, ne exerci graece disputationi per, omnis essent ne eum. Eos ne fugit omnium graecis, vix no nulla comprehensam. No sit hendrerit assueverit, id nec eleifend tincidunt voluptatibus. Et rebum placerat pri, nam ne liberavisse conclusion emque. At has alii partem ornatus. Cu melius deseruisse pro.</p>
+
+        </section>
+
+        <section>
+            <h2>Bulleted Lists</h2>
+            
+            <h3>CSS selectors</h3>
+            
+            <p>ul</p>
+            <p>ul li</p>
+            
+            <h3>Sample Code</h3>
+            
+            <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;ele1&lt;/li&gt;
+    &lt;li&gt;ele2&lt;/li&gt;
+    &lt;li&gt;ele3&lt;/li&gt;
+    &lt;li&gt;ele4&lt;/li&gt;
+&lt;/ul&gt;
+            </code></pre>
+            
+            <h3>Rendered Element:</h3>
+            
+            <ul>
+                <li>ele1</li>
+                <li>ele2</li>
+                <li>ele3</li>
+                <li>ele4</li>
+            </ul>
+            
+        </section>
+
+        <section>
+            <h2>Numbered Lists</h2>
+            
+            <h3>CSS selectors</h3>
+            
+            <p>ol</p>
+            <p>ol li</p>
+            
+            <h3>Sample Code</h3>
+            
+            <pre><code>
+&lt;ol&gt;
+    &lt;li&gt;ele1&lt;/li&gt;
+    &lt;li&gt;ele2&lt;/li&gt;
+    &lt;li&gt;ele3&lt;/li&gt;
+    &lt;li&gt;ele4&lt;/li&gt;
+&nbsp;&lt;/ol&gt;
+            </code></pre>
+            
+            <h3>Rendered Element:</h3>
+            
+            <ol>
+                <li>ele1</li>
+                <li>ele2</li>
+                <li>ele3</li>
+                <li>ele4</li>
+            </ol>
+            
+        </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+        <section>
+            <h2>Main Header Navigation</h2>
+            
+            <h3>CSS selectors</h3>
+            <p>#nav-header</p>
+
+            <p>
+                The header navigation bar is the primary method of accessing parts of the website. As our website is primarily a one-page site, many of the links will be anchor links to the rest of the same page if the user is accessing from the primary main page.
+            </p>
+            <p>
+                The navigation bar on the actual site has its position set as fixed, so it will always be at the top of the browser window / screen. For readability, the example below has its CSS overridden to position: static. In addition, the grid breakpoints that enable this nav bar to be responsive on the actual site causes it to behave slightly differently on this style guide's stylesheet.
+            </p>
+        
+      
+            <h3>Sample Code:</h3>
+          
+            <pre><code>
+&lt;header&gt;
+    &lt;nav id="nav-header"&gt; &lt;!-- banner --&gt;
+        &lt;div id="centered-nav-container"&gt;
+            &lt;div id="nav-bar-main"&gt;
+                &lt;div id="nav-bar-left"&gt;
+                    &lt;div id="nav-bar-logo"&gt;
+                        &lt;a class="logo" href="#"&gt;
+                            &lt;img src="&lt;?php echo url('assets/images/logo.png') ?&gt;" alt="&lt;?php echo $site-&gt;title()-&gt;html() ?&gt;" width="45" height="45" /&gt;
+                        &lt;/a&gt;
+
+                    &lt;/div&gt;
+                    &lt;div id="site-name"&gt;&lt;a href="#"&gt;Kevin Choy&lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt; &lt;!-- ./nav-bar-left --&gt;
+                &lt;div id="nav-bar-right"&gt;
+                    &lt;ul class="menu-items-list"&gt;
+                        &lt;li&gt;&lt;a class="button-nav button-header-nav" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="button-nav button-header-nav" href="#"&gt;Work&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="button-nav button-header-nav" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+
+                &lt;/div&gt; &lt;!-- ./nav-bar-right --&gt;
+            &lt;/div&gt; &lt;!-- ./nav-bar-main --&gt;
+        &lt;/div&gt; &lt;!-- ./centered-nav-container --&gt;
+    &lt;/nav&gt; &lt;!-- ./banner --&gt;
+&lt;/header&gt;
+            </code></pre>
+            
+            <h3>Rendered Element</h3>
+            
+            <header>
+                <nav id="nav-header"> <!-- banner -->
+                    <div id="centered-nav-container">
+                        <div id="nav-bar-main">
+                            <div id="nav-bar-left">
+                                <div id="nav-bar-logo">
+                                    <a class="logo" href="#">
+                                        <img src="<?php echo url('assets/images/logo.png') ?>" alt="<?php echo $site->title()->html() ?>" width="45" height="45" />
+                                    </a>
+
+                                </div>
+                                <div id="site-name"><a href="#">Kevin Choy</a></div>
+                            </div> <!-- ./nav-bar-left -->
+                            <div id="nav-bar-right">
+                                <ul class="menu-items-list">
+                                    <li><a class="button-nav button-header-nav" href="#">About</a></li>
+                                    <li><a class="button-nav button-header-nav" href="#">Work</a></li>
+                                    <li><a class="button-nav button-header-nav" href="#">Contact</a></li>
+                                </ul>
+
+                            </div> <!-- ./nav-bar-right -->
+                        </div> <!-- ./nav-bar-main -->
+                    </div> <!-- ./centered-nav-container -->
+                </nav> <!-- ./banner -->
+            </header>
+
+        </section>
+
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+</body>
+</html>
