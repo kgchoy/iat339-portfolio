@@ -334,6 +334,20 @@ h2 a, h3 a {
     color: rgb(0, 155, 223);
 }
 
+/* vertically align the h3 in the work boxes with the image on the right */
+@media (max-width: 70rem) {
+    .work-description h3 {
+        margin-top: 0;
+    }
+}
+
+/* when in single-column layout, re-increase the margin */
+@media (max-width: 50.75rem) {
+    .work-description h3 {
+        margin-top: 0.75em;
+    }
+}
+
 a:hover {
     color: rgb(255, 0, 0);
 }
@@ -664,7 +678,6 @@ ol li{
     #nav-bar-main, #footer-bar-main {
         padding: 0 1.85em;
     }
-
 }
 
 @media (max-width: 27rem) {
