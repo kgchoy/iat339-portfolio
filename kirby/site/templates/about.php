@@ -28,21 +28,6 @@
             <?php echo $page->profile_image()->kirbytext() ?>
         </div> <!-- ./col-1of3 -->
 
-<!--         <div class="col-2of3">
-            <article class="article-container" id="about-section">
-                <?php echo $page->about_section()->kirbytext() ?>
-            </article>
-
-            <article class="article-container" id="process-section">
-                <?php echo $page->process_section()->kirbytext() ?>
-            </article>
-
-            <article class="article-container" id="outcomes-section">
-                <?php echo $page->outcomes_section()->kirbytext() ?>
-            </article>
-
-        </div> -->
-
     </div> <!-- ./grid -->
 
 </div> <!-- ./page-container -->
