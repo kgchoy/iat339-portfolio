@@ -212,7 +212,7 @@ h4 {
 
 .menu-items-list {
     list-style-type: none;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .menu-items-list .button-header-nav, .menu-items-list .button-footer-nav {
@@ -319,7 +319,11 @@ ol li {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
 
+/* increase the amount of space above menu items on header nav bar */
+#nav-bar-main #nav-bar-right ul {
+    margin: 0.325em;
 }
 
 #nav-bar-left {
