@@ -431,10 +431,11 @@ ol li{
     margin-bottom: 4em;
 }
 
-#banner-text p {
+#banner-text p, #banner-text h1 {
     font-weight: 700;
     font-size: 2.1rem;
     margin: 0.5em 0;
+    color: rgb(0, 0, 0);
 }
 
 .partial-width-button {
@@ -444,7 +445,7 @@ ol li{
 }
 
 @media (max-width: 36rem) {
-    #banner-text p {
+    #banner-text p, #banner-text h1 {
         font-size: 1.5rem;
     }
 

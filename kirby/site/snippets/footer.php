@@ -18,10 +18,11 @@
 
                     <ul class="menu-items-list" id="right-footer-links">
                         <li>
-                            <a class="button-nav button-footer-nav" href="<?php echo page('style-guide') ?>"><img class="footer-icon" src="<?php echo url('assets/images/icon-style-guide.png') ?>" alt="Style guide icon" width="25" height="18" aria-hidden="true">Style Guide</a>
-                        </li>
-                        <li>
                             <a class="button-nav button-footer-nav" href="assets/doc/resume.pdf"><img class="footer-icon" src="<?php echo url('assets/images/icon-resume.png') ?>" alt="Resume icon" width="25" height="18" aria-hidden="true">Resume</a>
+                        </li>
+
+                        <li>
+                            <a class="button-nav button-footer-nav" href="<?php echo page('style-guide') ?>"><img class="footer-icon" src="<?php echo url('assets/images/icon-style-guide.png') ?>" alt="Style guide icon" width="25" height="18" aria-hidden="true">Style Guide</a>
                         </li>
                     </ul>
                     
