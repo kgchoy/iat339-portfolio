@@ -110,7 +110,7 @@
             
             <h3>CSS selector:</h3>
             <p>
-                .field-half (for input field)<br>
+                .form-field (for input field)<br>
                 .form-label (for label)
             </p>
             
@@ -120,14 +120,14 @@
     &lt;div class="grid"&gt;
         &lt;div class="body-gridCol-1of2"&gt;
             &lt;label for="first-name" class="form-label"&gt;First Name:&lt;/label&gt;
-            &lt;input class="field-half" type="text" id="first-name" name="first-name"&gt;
+            &lt;input class="form-field" type="text" id="first-name" name="first-name"&gt;
         &lt;/div&gt;
         &lt;div class="body-gridCol-2of2"&gt;
             &lt;label for="last-name" class="form-label"&gt;Last Name:&lt;/label&gt;
-            &lt;input class="field-half" type="text" id="last-name" name="last-name"&gt;
+            &lt;input class="form-field" type="text" id="last-name" name="last-name"&gt;
         &lt;/div&gt;
         &lt;label for="email" class="form-label"&gt;Credit Card Number:&lt;/label&gt;
-        &lt;input class="field-half" type="text" id="email" name="email"&gt;
+        &lt;input class="form-field" type="text" id="email" name="email"&gt;
     &lt;/div&gt;
     &lt;input type="submit" value="Submit"&gt;
 &lt;/form&gt;
@@ -138,14 +138,14 @@
                 <div class="grid">
                     <div class="body-gridCol-1of2">
                         <label for="first-name" class="form-label">First Name:</label>
-                        <input class="field-half" type="text" id="first-name" name="first-name">
+                        <input class="form-field" type="text" id="first-name" name="first-name">
                     </div>
                     <div class="body-gridCol-2of2">
                         <label for="last-name" class="form-label">Last Name:</label>
-                        <input class="field-half" type="text" id="last-name" name="last-name">
+                        <input class="form-field" type="text" id="last-name" name="last-name">
                     </div>
                     <label for="email" class="form-label">Email:</label>
-                    <input class="field-half" type="text" id="email" name="email">
+                    <input class="form-field" type="text" id="email" name="email">
                 </div>
 
                 <input type="submit" value="Submit">

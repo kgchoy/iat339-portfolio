@@ -14,11 +14,6 @@
     padding: 0;
 }
 
-/*.pageContainer {
-    width: 80%;
-    margin: 0 auto;
-    clear: both;
-}*/
 
 /*
  *  General 3-column grid structure
@@ -154,13 +149,6 @@
     margin-left: 1.5%;
 }
 
-.mainPageFormGridFullWidth {
-    float: left;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-}
-
 .col-1of3-work-main {
     padding-left: 0;
     padding-right: 3em;
@@ -190,7 +178,6 @@
     .body-gridCol-2of2 {
         margin-left: 0;
     }
-
 }
 
 /* fix bug with float - fixes a problem where floated items don't have a height */

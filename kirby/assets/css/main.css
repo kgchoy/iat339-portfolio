@@ -1,32 +1,12 @@
 /*
  *  Main CSS for the portfolio website. For CSS related to the site's grids, see grid.css.
  */
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0;
 }
-
-/*section:not([id]) {
-    margin: 1em 0;
-    padding: 0.5em 0;
-    border-top: 1px solid #333;
-}
-
-section h3 {
-    margin-bottom: 0;
-}
-
-section p {
-    margin-top: 0;
-}
-
-section code {
-    background-color: #EEE;
-    padding: 0.5em 0.75em;
-    margin-top:0.25rem;
-    color:black;
-}*/
 
 header {
     background-color: rgb(255, 255, 255);
@@ -44,16 +24,6 @@ footer {
     margin-top: 1em;
 }
 
-.floatClear{
-    clear:both;
-}
-
-.majorSection{
-    margin-top: 2rem;
-}
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
 
 /* Styling for the navigation button */
 .button-nav {
@@ -96,7 +66,6 @@ footer {
 
 .menu-items-list .button-nav:hover {
     color: rgb(255, 0, 0);
-    /*vertical-align: bottom;*/
 }
 
 /* For button hover stste */
@@ -104,15 +73,6 @@ footer {
     background-color: rgb(0, 93, 170);  /* a darker shade of blue as the background color of the button */
 }
 
-#menuButton {
-    display: none;
-}
-
-/*@media (max-width: 39.5rem) {
-    #menuButton {
-        display: block;
-    }
-}*/
 
 /* Styling for the navigation button */
 p a, li a {
@@ -122,87 +82,11 @@ p a, li a {
     /*text-decoration: none;*/
 }
 
-.showHiddenContentButton, .showHiddenContentButton:visited {
-  font-style: normal;
-  background-color: rgb(0, 0, 0);
-  color:rgb(255, 255, 255);
-  padding: 0.5em 1em;
-  font-size: 1rem;
-  border: 0.125em solid rgb(60, 60, 60);
-  border-radius:0.4rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  width: 100%;
-  margin: 1.25em 0;
-
-  /* when hovering over the button with a mouse, change to the "pointer" icon. not all browsers seem to support
-     showing the pointer when mousing over a button element without declaring this */
-  cursor: pointer;
-}
-
-.showHiddenContentButton:focus {
-  outline: 0; /* hide blue border when clicked*/
-}
-
-.showHiddenContentButton:hover {
-  background-color: rgb(60, 60, 60);
-}
-
-
-.checkoutButton{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.hugRight{
-  margin-left: auto;
-  margin-right: 0.5rem;
-  display: block;
-}
-
-.absoluteBottomRight{
-  position:absolute;
-  top: auto;
-  bottom: 0.5rem;
-  left: auto;
-  right: 0.5rem;
-  display: block;
-  
-}
-
-#newAccount{
-    width: 30em;
-    margin: 0.25rem 0;
-    overflow:hidden;
-}
-
-/* full width form field */
-.fieldFull{
-    width: 100%;
-    width: -webkit-calc(100% - 4px);
-    width: -moz-calc(100% - 4px);
-    width: calc(100% - 4px);
-    margin: 0.25rem 0;
-    padding: 0.25em 0;
-}
-
-/* half width form field, left side on 2-column layout */
-.field-halfL{
-    width:48%;
-    margin: 0.25rem 0;
-    float:left;
-    padding: 0.25em 0;
-}
-
-/* half width form field, right side on 2-column layout */
-.field-halfR{
-    width:48%;
-    margin: 0.25rem 0;
-    float:right;
-    padding: 0.25em 0;
-}
-
+/*
+ *  Form properties
+ */
 /* properties for form fields within a 2-column structure, when both columns are identical */
-.field-half {
+.form-field {
     width: 100%;
     margin: 0.125rem 0;
     padding: 0.5em 0.5em;
@@ -210,9 +94,6 @@ p a, li a {
     margin-bottom:0.5rem;
 }
 
-.fieldTextarea {
-    width: 100%;
-}
 
 /* for textarea field - all properties below needed to override default css */
 .comments-textarea-full {
@@ -223,27 +104,6 @@ p a, li a {
   height: 8em;
 }
 
-/* for feedback page's textarea fields */
-.feedbackTextareaFull {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1rem;
-  padding: 0.5em 0.5em;
-  width: 31rem;
-  height: 8em;
-  margin-bottom: 2em;
-}
-
-@media(max-width: 35rem) {
-    .feedbackTextareaFull {
-        width: 95%;
-    }
-}
-
-/* add extra vertical spacing after the form */
-.mainPageFormGridFullWidth .comments-textarea-full {
-    margin-bottom: 0.8em;
-}
-
 input {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -252,14 +112,12 @@ input {
   margin-top:0.5rem;
 }
 
-/* 
-  TEXT AND VISUAL ELEMENTS -------------------
-*/
+
 #first-section {
     margin-top: 6rem;
 }
 
-#site-name{
+#site-name {
     color: rgb(0, 155, 223);
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
@@ -352,26 +210,15 @@ h4 {
     margin-top: 1.25em;
 }
 
-.menu-items-list{
+.menu-items-list {
     list-style-type: none;
     height: 100%;
-}
-
-.menu-items-list li{
-/*  display:inline-block;*/
 }
 
 .menu-items-list .button-header-nav, .menu-items-list .button-footer-nav {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 155, 223);
 }
-
-/* for header nav buttons, swap padding for margin so to reduce the amount of
-   whitespace that is clickable */
-/*.button-header-nav, .button-footer-nav {
-    padding: 0.75em 0.75em;
-    margin: 0 0.75em;
-}*/
 
 .button-footer-nav {
     padding: 0 0.75em;
@@ -383,18 +230,15 @@ h4 {
     }
 }
 
-ol{
+ol {
     padding-left:2em;
     margin:0.5em 0;
 }
 
-ol li{
+ol li {
     margin:0.125em 0;
 }
 
-.biggerText {
-    font-size: 1.25rem;
-}
 
 /*
  *  Invisible tag used as an anchor, offsetted above the actual section. This is needed due to the
@@ -421,7 +265,6 @@ ol li{
 .partial-width-button {
     font-size: 1.2rem;
     border-radius: 0.6em;
-
 }
 
 @media (max-width: 36rem) {
@@ -437,30 +280,15 @@ ol li{
 
 /* Navigation elements */
 
-/* Container for header navigation menu, which is centered and has padding on both sides for
-   whitespace */
-#centered-nav-container {
-
-}
-
 /* Container for footer navigation menu, which is centered and has padding on both sides for
    whitespace. Identical to header nav menu, but the positioning isn't set as fixed. */
 #footer-container {
-    /*background-color: rgb(255, 255, 255);*/
     clear: both;
     left: 0;
     right: 0;
     top: 0;
     z-index: 99;
 }
-
-/* Reduce the padding */
-/*@media (max-width: 80rem) {
-    #centered-nav-container, #footer-container {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}*/
 
 /* The actual centered navigation bar itself */
 #nav-bar-main, #footer-bar-main {
@@ -473,13 +301,6 @@ ol li{
     margin-right: auto;
     padding: 0 2.5em;
 }
-/*
-#nav-header{
-  position: fixed;
-  z-index: 11;
-  right: 0;
-  left: 0;
-}*/
 
 @media (max-width: 85rem) {
     #nav-bar-main, #footer-bar-main {
@@ -525,9 +346,6 @@ ol li{
     vertical-align: bottom;
  }
 
-#fullscreenMenuContainer {
-    visibility: hidden;
-}
 
 #footer-bar-left {
     float: left;
@@ -586,63 +404,15 @@ ol li{
         float: right;
     }
 
-/*    #nav-bar-right .button-nav {
-        font-size: 1rem;
-    }*/
-
-    /* Styling for submit button on a dark background. */
-    #menuButton, #menuButton:visited, #menuButton:active {
-        background-color:rgb(0, 155, 223);
-        color:#ffffff;
-        padding: 0.25em 1em;
-        font-size:1.125rem;
-        border-radius:0.4rem;
-        border: 0.125em solid #ffffff;
-        cursor: pointer;
-        margin-top: 0.3rem;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-variant: small-caps;
-    }
-
-    /* Display a lighter shade of blue for both versions of the button */
-    #menuButton:hover {
-      background-color: rgb(44, 44, 230);
-    }
-  
-    .menuButtonFlashUp{
-        background-color: rgb(44, 44, 230);
-    }
-
-    #fullscreenMenuContainer {
-        visibility: hidden;
-        position: fixed;
-        background-color: rgb(0, 155, 223);
-        width: 100%;
-        height: 100%;  /* have the menu occupy the full screen height */
-        z-index: 98;
-        clear: both;
-        overflow: hidden;
-    }
-
     .menu-items-list {
         /*width: 100%;*/
         margin-top: 3.5em;
         padding-left: 1.5em;
         clear: both;
     }
-
-    .expand {
-      visibility: visible;
-    }
-
 }
 
 @media (max-width: 30.8rem) {
-    #nav-bar-right {
-        /*float: left;*/
-        /*clear: both;*/
-    }
-
     #nav-bar-right .button-nav {
         margin-top: 0;
         padding: 0.75em 0.75em;
@@ -674,24 +444,9 @@ ol li{
         margin-top: 0.5rem;
     }
 
-    #menuButton, #menuButton:visited, #menuButton:active {
-        font-size: 1.2rem;
-    }
-
     #nav-bar-right .button-nav {
         font-size: 0.875rem;
     }
-
-    #centered-nav-container {
-        /*padding-top: 0.3rem;*/
-        /*padding-bottom: 0.6rem;*/
-    }
-
-    .buttonGeneric, .buttonGeneric:visited, .buttonGeneric:active, 
-      .buttonGenericOnDark, .buttonGenericOnDark:visited, .buttonGeneric:active {
-        font-size:1.05rem;
-    }
-
 }
 
 /* After floating to the right, this sets the order of the menu items in the correct order */
@@ -699,49 +454,6 @@ ol li{
     float: left;
 }
 
-/* css for the site structure */
-#bodyContainer{
-  width: 70rem;
-  position: relative;
-  display: block;
-  margin-left:auto;
-  margin-right:auto;
-  padding:0.75rem;
-  margin-top: 3rem;
-}
-
-#bodyContainerCheckout{
-  width: 70rem;
-  position: relative;
-  display: block;
-  margin-left:auto;
-  margin-right:auto;
-  padding:0.75rem;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-@media(max-width: 71rem){ /*media query for if the page width became too smaller than the max possible width of the content*/
-    #bodyContainer{
-        width: 100%;
-    }
-  #bodyContainerCheckout{
-    width: 100%;
-  }
-}
-
-.hide {
-  display: none; /* completely remove the content from the page */
-}
-
-.show {
-  display: inline;
-}
-
-/*
- *  This is for the container that contains each section that describes the hotel facilities,
- *  the trip experience, and so on.
- */
 .section-container {
     width: 100%;
     margin: 0 auto;
@@ -767,29 +479,11 @@ figcaption {
     margin: 0 auto;
 }
 
-/*@media(max-width: 85rem) {
-    #page-container {
-        width: 90%;
-    }
-
-    #nav-bar-main {
-        width: 90%;
-        padding: 0;
-    }
-}*/
-
 @media(max-width: 87rem) {
     #page-container, #nav-bar-main, #footer-bar-main {
         width: 100%;
     }
 }
-
-/*@media(max-width: 60rem) {
-    #page-container {
-        width: 100%;
-        margin: 0 auto;
-    }
-}*/
 
 @media(max-width: 71rem) {
     .section-container {
@@ -801,75 +495,10 @@ figcaption {
     margin-top: 0.5em;
 }
 
-.multiSelect{
-    display: inline-block;
-    margin-left: 1rem;
-}
-
-.quantitativeFeedback{
-    margin-top: 0.5rem;
-    margin-left: 1rem;
-}
-
-.quantitativeFeedback h3 {
-    margin-top: 1rem;
-}
-
-.multiSelectOption{
-  display: block;
-  margin-top: 0.75rem;
-  margin-bottom: 0;
-}
-
-.feedbackSubmit{
-  display: block;
-  margin-top: 1rem;
-}
-
-footer {
-    /*height: 3rem;*/
-    /*background-color: rgb(0, 155, 223);*/
-}
-
 #footer-bar-main {
     border-top: solid rgb(0, 155, 223) 0.08em;
     padding-top: 1rem;
     padding-bottom: 2rem;
-}
-
-/* table of booking costs on the checkout page */
-.bookingCosts {
-    width: 100%;
-    font-size: 1.15rem;
-    margin-bottom: 2em;
-}
-
-.bookingCostsDescColumn {
-    width: 70%;
-    vertical-align: top;
-    padding: 0.25em 0.5em 0.25em 0;
-}
-
-.bookingCostsAmountColumn {
-    width: 30%;
-    vertical-align: top;
-    padding: 0.25em 0 0.5em 0.25em;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.lastRow {
-    border-top: 0.08rem solid #AAAAAA;
-    padding-top: 0.75em;
-}
-
-.bookingCosts th {
-    text-align: left;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-decoration: underline;
-}
-
-#contact-form {
-    margin-bottom: 2em;
 }
 
 #work-sidebar {
@@ -889,10 +518,6 @@ footer {
 .main-work-listing-figure img {
     border: 0.075rem solid #cccccc;
 }
-
-/*header:after, #nav-bar-main, #centered-nav-container {
-    clear: both;
-}*/
 
 .menu-items-list:after {
     /* clearfix to prevent zero-height element */
@@ -917,17 +542,6 @@ footer {
         width: 100%;
     }
 }
-
-.semiopaque-type {
-    color: rgb(150, 150, 150);
-}
-
-/*.footer-icon {
-    color: rgb(0, 155, 223);
-    border: 0.125em solid rgb(0, 155, 223);
-    padding: 0.125em;
-    vertical-align: text-top;
-}*/
 
 #footer-bar-right p {
     margin-top: 0;
@@ -981,7 +595,6 @@ footer .menu-items-list li a {
     }
 }
 
-
 @media (max-width: 79rem) {
     #footer-bar-right {
         clear: both;
@@ -1021,7 +634,6 @@ footer .menu-items-list li a {
         width: 100%;
     }
 }
-
 
 /* reduce the amount of vertical spacing above the first paragraph on the about page */
 #about-summary > p:first-child {

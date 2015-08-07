@@ -77,3 +77,8 @@ section pre {
 .work-page-bottom-buttons {
     margin-top: 1em;
 }
+
+/* currently used for style guide only */
+#contact-form {
+    margin-bottom: 2em;
+}
