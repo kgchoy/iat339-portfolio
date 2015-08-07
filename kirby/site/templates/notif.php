@@ -55,11 +55,11 @@
                 <!-- navigation buttons for end of a work page -->
                 <div class="grid work-page-bottom-buttons">
                     <div class="body-gridCol-1of2">
-                        <a class="button-nav full-width-button" href="<?php echo page('home') . '#featured-work' ?>">Return to Work Gallery</a>
+                        <a class="button-nav full-width-button center-aligned-text" href="<?php echo page('home') . '#featured-work' ?>">Return to Work Gallery</a>
                     </div>
 
                     <div class="body-gridCol-2of2">
-                        <a class="button-nav full-width-button right-align-button" href="<?php echo page('notif') ?>">Next Work: Notif</a>
+                        <a class="button-nav full-width-button center-aligned-text" href="<?php echo page('bccampus') ?>">Next Work: BCcampus</a>
                     </div>
                 </div> <!-- ./work-page-bottom-buttons -->
 

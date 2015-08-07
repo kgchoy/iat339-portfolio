@@ -28,7 +28,7 @@ About-Section:
 
 I worked at BCcampus, a publically-funded organization that uses information technology to improve teaching and learning in BC's universities and colleges, between January&ndash;August of 2013. During my first three months, I worked on a usability test for our corporate website to find out whether our audience could perform typical tasks on our website easily, and to discover the usability problems of our site.
 
-(image: bcc-homepage-jan-2013-top.jpg alt: Screenshot of the BCcampus home page from January 2013 link: bcc-homepage-jan-2013-full.jpg caption: Screenshot of the BCcampus home page from January 2013. This was the version I conducted a usability test on. Click for a full height image.)
+(image: bcc-homepage-jan-2013-top.jpg alt: Screenshot of the BCcampus home page from January 2013 link: bcc-homepage-jan-2013-full.jpg caption: Screenshot of the BCcampus home page from January 2013. This was the version I conducted a usability test on. Click for a full height screenshot.)
 
 ----
 
@@ -48,7 +48,7 @@ Based on the target audience, I brainstormed the most common use cases on the BC
 I created nine tasks, which ranged from collecting general qualitative feedback (_"I'll give you 45 seconds to freely explore the home page without interruption"_) to task- and use-case-based (_"A colleague of yours mentions hearing something about "open educational resources” but he isn’t sure what it is. Using this site, determine whether or not it contains information that would address his question."_).
 
 ### Recruiting Participants
-(image: recruitment-process.jpg alt: Notes from the participant recruitment and selection process caption: Some handwritten discussion and decision notes from the participant recruitment and early selection process)
+(image: recruitment-process.jpg link: recruitment-process.jpg alt: Notes from the participant recruitment and selection process caption: Some handwritten discussion and decision notes from the participant recruitment and early selection process)
 
 To gather participants who would fit the BCcampus website's target audience, I sent an email via BCcampus' newsletter mailing list. Given the high number of responses (greater than 30), my supervisor and I decided to select eight participants for in-person testing, and do an additional round of testing remotely using videoconferencing software. I tried to have participants be as diverse as possible (within our target audience) from as many educational job roles as possible.
 
@@ -69,7 +69,7 @@ After the in-person test sessions were completed, I conducted a shorter, remote 
 
 ### Aggregating Results and Recommendations
 
-After I completed usability testing, I was tasked with compiling a report about procedures, findings, and recommendations. I found during testing a list of issues with the website: some expected, others unexpected. To prioritize these problems, I defined the (link: http://www.userfocus.co.uk/articles/redroutes.html text: red routes) of the website: which functionality was most important to the website, and what obstacles were impeding these routes? For example, I considered some of these issues, such as its difficult-to-use search function, were critical issues that a majority of our users had encountered and had to be fixed as soon as possible.
+After I completed usability testing, I was tasked with compiling a report about procedures, findings, and recommendations. To prioritize the severities of the website's issues, I defined the (link: http://www.userfocus.co.uk/articles/redroutes.html text: red routes) of the website: which functionality was most important to the website, and what obstacles were impeding these routes? For example, I considered some of these issues, such as its difficult-to-use search function, were critical issues that a majority of our users had encountered and had to be fixed as soon as possible.
 
 The report was written specifically for internal use at BCcampus, as well as for BCcampus stakeholders. However, I obtained permission to include this report on my portfolio website; you may (file: bccampus-website-usability-test-report.pdf text: download it here).
 
@@ -82,4 +82,4 @@ For BCcampus, the post-test report, combined with the severity of many of the is
 
 While it was challenging to create and coordinate a usability test from scratch, it was also very rewarding to be able to gain so much practical experience. It was also a great experience being able to work directly with faculty, academic administrators, and other academic staff.
 
-(image: bcc-homepage-nov-2013-top.jpg link: bcc-homepage-nov-2013-full.jpg alt: Screenshot of BCcampus.ca from November 2013 caption: Screenshot of the new website from November 2013, which incorporated recommendations from usability testing. Click for a full height image.)
+(image: bcc-homepage-nov-2013-top.jpg link: bcc-homepage-nov-2013-full.jpg alt: Screenshot of BCcampus.ca from November 2013 caption: Screenshot of the new website from November 2013, which incorporated recommendations from usability testing. Click for a full height screenshot.)

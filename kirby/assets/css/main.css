@@ -1052,8 +1052,8 @@ footer .menu-items-list li a {
     margin-top: 4em;
 }
 
-.right-align-button {
-    text-align: right;
+.center-aligned-text {
+    text-align: center;
 }
 
 @media (max-width: 50.75rem) {
