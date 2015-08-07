@@ -9,6 +9,9 @@
     <meta name="description" content="<?php echo $site->description()->html() ?>">
     <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="<?php echo url('assets/images/favicon.png') ?>">
+
     <?php echo css('assets/css/main.css') ?>
 
     <?php echo css('assets/css/grid.css') ?>
@@ -26,7 +29,7 @@
                     <div id="nav-bar-left">
                         <div id="nav-bar-logo">
                             <a class="logo" href="<?php echo page('home') ?>">
-                                <img src="<?php echo url('assets/images/logo.png') ?>" alt="Site logo" width="49" height="49" />
+                                <img src="<?php echo url('assets/images/logo.png') ?>" alt="Site logo" width="49" height="49">
                             </a>
 
                         </div>
