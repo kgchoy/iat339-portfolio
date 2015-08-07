@@ -39,44 +39,21 @@
     display:block;
 }
 
-.dark-blue{
-    background-color:#1D1D99
+
+.light-blue {
+    background-color: rgb(0, 155, 223);
 }
 
-.light-blue{
-    background-color:#2C2CE6
+.dark-blue {
+    background-color: rgb(0, 93, 170);
 }
 
-.dark-gray{
-    background-color:#EFEFEF
-}
-
-.light-gray{
-    background-color:#cfcfcf
-}
-
-.blackBG{
-    background-color: black;
-    padding: 1rem 1rem;
-    margin-top: 1.5rem;
-    color: white;
-    display:block;
-}
-
-.banner{
-      background-color: rgb(0, 155, 223);
-      display: block;
-      height: 5rem;
-      padding: 0.5rem 1.5rem;
+.red {
+    background-color: rgb(255, 0, 0);
 }
 
 h1#style-guide-header {
     color: black;
-}
-
-/* fix positioning on the contents and citations page to display them statically */
-#style-guide-body #earthBackwards, #style-guide-body #basePad {
-    position: static;
 }
 
 /* for styling code inside the code tag */
@@ -90,4 +67,13 @@ section code {
 section pre {
     font-size: 1.1rem;
     white-space: pre-wrap; /* wrap text */
+}
+
+.style-guide-h2 {
+    margin-top: 2em;
+}
+
+/* remove the extra upper margin; not needed for style guide */
+.work-page-bottom-buttons {
+    margin-top: 1em;
 }

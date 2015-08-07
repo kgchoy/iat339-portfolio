@@ -101,7 +101,7 @@ footer {
 
 /* For button hover stste */
 .button-nav:hover {
-    background-color: rgb(0, 110, 158);  /* a darker shade of red as the background colour of the button */
+    background-color: rgb(0, 93, 170);  /* a darker shade of blue as the background color of the button */
 }
 
 #menuButton {
@@ -147,26 +147,6 @@ p a, li a {
   background-color: rgb(60, 60, 60);
 }
 
-/*
- *  Styling for submit button on a lighter background.
- *  The :active selector is here so that the button will remain the lighter shade of blue even
- *  after it is clicked.
- */
-.buttonGeneric, .buttonGeneric:visited, .buttonGeneric:active {
-    background-color: rgb(0, 155, 223);
-    color:rgb(255, 255, 255);
-    padding: 0.5em 1em;
-    font-size:1.125rem;
-    border-radius: 0.6em;
-    border: 0.125em solid #000000;
-    font-family: 'Source Sans Pro', sans-serif;
-    cursor: pointer;
-}
-
-/* Display a lighter shade of blue for both versions of the button */
-.buttonGeneric:hover, .buttonGenericOnDark:hover {
-  background-color: rgb(44, 44, 230);
-}
 
 .checkoutButton{
   margin-top: 1rem;
@@ -206,7 +186,7 @@ p a, li a {
 }
 
 /* half width form field, left side on 2-column layout */
-.fieldHalfL{
+.field-halfL{
     width:48%;
     margin: 0.25rem 0;
     float:left;
@@ -214,7 +194,7 @@ p a, li a {
 }
 
 /* half width form field, right side on 2-column layout */
-.fieldHalfR{
+.field-halfR{
     width:48%;
     margin: 0.25rem 0;
     float:right;
@@ -222,7 +202,7 @@ p a, li a {
 }
 
 /* properties for form fields within a 2-column structure, when both columns are identical */
-.fieldHalf {
+.field-half {
     width: 100%;
     margin: 0.125rem 0;
     padding: 0.5em 0.5em;
@@ -235,7 +215,7 @@ p a, li a {
 }
 
 /* for textarea field - all properties below needed to override default css */
-.commentsTextareaFull {
+.comments-textarea-full {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   padding: 0.5em 0.5em;
@@ -260,7 +240,7 @@ p a, li a {
 }
 
 /* add extra vertical spacing after the form */
-.mainPageFormGridFullWidth .commentsTextareaFull {
+.mainPageFormGridFullWidth .comments-textarea-full {
     margin-bottom: 0.8em;
 }
 
@@ -268,7 +248,7 @@ input {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.formLabel {
+.form-label {
   margin-top:0.5rem;
 }
 
@@ -888,7 +868,7 @@ footer {
     text-decoration: underline;
 }
 
-#startBooking {
+#contact-form {
     margin-bottom: 2em;
 }
 

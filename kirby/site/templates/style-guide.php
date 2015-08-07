@@ -11,7 +11,12 @@
 
     <?php echo css('assets/css/grid.css') ?>
 
+    <!-- style guide-specific CSS -->
     <?php echo css('assets/css/style-guide.css') ?>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="<?php echo url('assets/images/favicon.png') ?>">
+
 
     <?php echo css('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,700italic,600italic,400italic') ?>
 
@@ -28,6 +33,7 @@
           <a href="#interactive_elements" class="button-nav">Interactive Elements</a>
           <a href="#text_elements" class="button-nav">Text Elements</a>
           <a href="#combined_elements" class="button-nav">Combined Elements</a>
+          <a href="#color-scheme" class="button-nav">Color Scheme</a>
       </p>
 
     </nav>
@@ -40,24 +46,46 @@
         <!-- Default Button styling section -->
         <section>
 
-            <h2>Navigation Button</h2>
+            <h2 class="style-guide-h2">Partial-Width Navigation Button</h2>
 
-            <h3>CSS selector:</h3>
-            <p>.button-nav</p>
+            <p>This type of button is as wide as the amount of text inside of it.</p>
+
+            <h3>CSS selectors:</h3>
+            <p>.button-nav, .partial-width-button (both are required)</p>
 
             <h3>Sample code:</h3>
             <pre><code> <!-- code inside the pre tag must be formatted like this to display c -->
-&lt;a class="button-nav" href="#"&gt;Link to Project&lt;/a&gt;
+&lt;a class="button-nav partial-width-button" href="#"&gt;Partial-Width Button&lt;/a&gt;
             </code></pre>
 
             <h3>Rendered element for button-nav:</h3>
 
-            <a class="button-nav" href="#">Link to Project</a>
+            <a class="button-nav partial-width-button" href="#">Partial-Width Button</a>
 
         </section>
 
         <section>
-            <h2>In-text link</h2>
+
+            <h2 class="style-guide-h2">Full-Width Navigation Button</h2>
+
+            <p>This type of button is as wide as its parent container.</p>
+
+            <h3>CSS selectors:</h3>
+            <p>.button-nav, .full-width-button (both are required)</p>
+
+            <h3>Sample code:</h3>
+            <pre><code> <!-- code inside the pre tag must be formatted like this to display c -->
+&lt;a class="button-nav full-width-button" href="#"&gt;Full-Width Button&lt;/a&gt;
+            </code></pre>
+
+            <h3>Rendered element for button-nav:</h3>
+
+            <a class="button-nav full-width-button" href="#">Full-Width Button</a>
+
+        </section>
+
+        <section>
+            <h2 class="style-guide-h2">In-text Link</h2>
 
             <h3>CSS selectors</h3>
 
@@ -73,52 +101,48 @@
 
             <p>This is a link to <a href="#">somewhere else on the page</a> so you should click it.</p>
 
-            <h3>Additional Info:</h3>
-
-            <p>The links in a paragraph is italics and underlined. The colour of the links will always inherit the parent's colour.</p>
         </section>
 
         <section>
-            <h2>Text Input Field</h2>
+            <h2 class="style-guide-h2">Text Input Field</h2>
             
             <h3>CSS selector:</h3>
             <p>
-                .fieldHalf (for input field)<br>
-                .commentsTextareaFull (for textarea field)<br>
-                .formLabel (for label)
+                .field-half (for input field)<br>
+                .form-label (for label)
             </p>
             
             <h3>Sample code:</h3>
             <pre><code>
-&lt;form action="reciept.html" method="post" id="startBooking"&gt;
+&lt;form action="reciept.html" method="post" id="contact-form"&gt;
 &lt;div class="grid"&gt;
     &lt;div class="body-gridCol-1of2"&gt;
-        &lt;label for="FirstName" class="formLabel"&gt;First Name:&lt;/label&gt;
-        &lt;input class="fieldHalf" type="text" id="FirstName" name="FirstName"&gt;
+        &lt;label for="first-name" class="form-label"&gt;First Name:&lt;/label&gt;
+        &lt;input class="field-half" type="text" id="first-name" name="first-name"&gt;
     &lt;/div&gt;
     &lt;div class="body-gridCol-2of2"&gt;
-        &lt;label for="LastName" class="formLabel"&gt;Last Name:&lt;/label&gt;
-        &lt;input class="fieldHalf" type="text" id="LastName" name="LastName"&gt;
+        &lt;label for="last-name" class="form-label"&gt;Last Name:&lt;/label&gt;
+        &lt;input class="field-half" type="text" id="last-name" name="last-name"&gt;
     &lt;/div&gt;
-    &lt;label for="creditCard" class="formLabel"&gt;Credit Card Number:&lt;/label&gt;
-    &lt;input class="fieldHalf" type="text" id="creditCard" name="creditCard"&gt;
+    &lt;label for="email" class="form-label"&gt;Credit Card Number:&lt;/label&gt;
+    &lt;input class="field-half" type="text" id="email" name="email"&gt;
 &lt;/div&gt;
 &lt;/form&gt;
             </code></pre>
             
             <h3>Rendered Element:</h3>
-            <form action="reciept.html" method="post" id="startBooking">
+            <form action="reciept.html" method="post" id="contact-form">
                 <div class="grid">
                     <div class="body-gridCol-1of2">
-                        <label for="FirstName" class="formLabel">First Name:</label>
-                        <input class="fieldHalf" type="text" id="FirstName" name="FirstName">
+                        <label for="first-name" class="form-label">First Name:</label>
+                        <input class="field-half" type="text" id="first-name" name="first-name">
                     </div>
                     <div class="body-gridCol-2of2">
-                        <label for="LastName" class="formLabel">Last Name:</label>
-                        <input class="fieldHalf" type="text" id="LastName" name="LastName">
+                        <label for="last-name" class="form-label">Last Name:</label>
+                        <input class="field-half" type="text" id="last-name" name="last-name">
                     </div>
-                    <label for="creditCard" class="formLabel">Credit Card Number:</label>
-                    <input class="fieldHalf" type="text" id="creditCard" name="creditCard">
+                    <label for="email" class="form-label">Email:</label>
+                    <input class="field-half" type="text" id="email" name="email">
                 </div>
             </form>
 
@@ -138,7 +162,7 @@
     <section id="text_elements">
 
         <section>
-            <h2>Headings</h2>
+            <h2 class="style-guide-h2">Headings</h2>
 
             <h3>CSS selectors</h3>
             <p>
@@ -184,7 +208,7 @@
         </section>
 
         <section>
-            <h2>Paragraphs</h2>
+            <h2 class="style-guide-h2">Paragraphs</h2>
 
             <h3>CSS selectors</h3>
 
@@ -203,7 +227,7 @@
         </section>
 
         <section>
-            <h2>Bulleted Lists</h2>
+            <h2 class="style-guide-h2">Bulleted Lists</h2>
             
             <h3>CSS selectors</h3>
             
@@ -233,7 +257,7 @@
         </section>
 
         <section>
-            <h2>Numbered Lists</h2>
+            <h2 class="style-guide-h2">Numbered Lists</h2>
             
             <h3>CSS selectors</h3>
             
@@ -269,19 +293,15 @@
     <section id="combined_elements">
 
         <section>
-            <h2>Main Header Navigation</h2>
-            
-            <h3>CSS selectors</h3>
-            <p>#nav-header</p>
+            <h2 class="style-guide-h2">Main Header Navigation</h2>
 
             <p>
-                The header navigation bar is the primary method of accessing parts of the website. As our website is primarily a one-page site, many of the links will be anchor links to the rest of the same page if the user is accessing from the primary main page.
+                The navigation bar on the actual site has its position set as fixed, so it will always be at the top of the browser window / screen. For readability, the style guide example below has its CSS overridden to position: static instead of position: fixed. In addition, the grid breakpoints that enable this nav bar to be responsive on the actual site causes it to behave slightly differently on this style guide's stylesheet.
             </p>
-            <p>
-                The navigation bar on the actual site has its position set as fixed, so it will always be at the top of the browser window / screen. For readability, the example below has its CSS overridden to position: static. In addition, the grid breakpoints that enable this nav bar to be responsive on the actual site causes it to behave slightly differently on this style guide's stylesheet.
-            </p>
-        
-      
+
+            <h3>CSS selectors</h3>
+            <p>header</p>
+
             <h3>Sample Code:</h3>
           
             <pre><code>
@@ -291,18 +311,18 @@
             &lt;div id="nav-bar-main"&gt;
                 &lt;div id="nav-bar-left"&gt;
                     &lt;div id="nav-bar-logo"&gt;
-                        &lt;a class="logo" href="#"&gt;
-                            &lt;img src="&lt;?php echo url('assets/images/logo.png') ?&gt;" alt="&lt;?php echo $site-&gt;title()-&gt;html() ?&gt;" width="45" height="45" /&gt;
+                        &lt;a class="logo" href="&lt;?php echo page('home') ?&gt;"&gt;
+                            &lt;img src="&lt;?php echo url('assets/images/logo.png') ?&gt;" alt="Site logo" width="49" height="49"&gt;
                         &lt;/a&gt;
 
                     &lt;/div&gt;
-                    &lt;div id="site-name"&gt;&lt;a href="#"&gt;Kevin Choy&lt;/a&gt;&lt;/div&gt;
+                    &lt;div id="site-name"&gt;&lt;a href="&lt;?php echo page('home') ?&gt;"&gt;evin Choy&lt;/a&gt;&lt;/div&gt;
                 &lt;/div&gt; &lt;!-- ./nav-bar-left --&gt;
                 &lt;div id="nav-bar-right"&gt;
                     &lt;ul class="menu-items-list"&gt;
-                        &lt;li&gt;&lt;a class="button-nav button-header-nav" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a class="button-nav button-header-nav" href="#"&gt;Work&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a class="button-nav button-header-nav" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="button-nav button-header-nav" href="&lt;?php echo page('about') ?&gt;"&gt;About&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="button-nav button-header-nav" href="&lt;?php echo page('home') . '#featured-work' ?&gt;"&gt;Work&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="button-nav button-header-nav" href="mailto:kgchoy@sfu.ca"&gt;Email Me&lt;/a&gt;&lt;/li&gt;
                     &lt;/ul&gt;
 
                 &lt;/div&gt; &lt;!-- ./nav-bar-right --&gt;
@@ -320,18 +340,18 @@
                         <div id="nav-bar-main">
                             <div id="nav-bar-left">
                                 <div id="nav-bar-logo">
-                                    <a class="logo" href="#">
-                                        <img src="<?php echo url('assets/images/logo.png') ?>" alt="<?php echo $site->title()->html() ?>" width="45" height="45" />
+                                    <a class="logo" href="<?php echo page('home') ?>">
+                                        <img src="<?php echo url('assets/images/logo.png') ?>" alt="Site logo" width="49" height="49">
                                     </a>
 
                                 </div>
-                                <div id="site-name"><a href="#">Kevin Choy</a></div>
+                                <div id="site-name"><a href="<?php echo page('home') ?>">evin Choy</a></div>
                             </div> <!-- ./nav-bar-left -->
                             <div id="nav-bar-right">
                                 <ul class="menu-items-list">
-                                    <li><a class="button-nav button-header-nav" href="#">About</a></li>
-                                    <li><a class="button-nav button-header-nav" href="#">Work</a></li>
-                                    <li><a class="button-nav button-header-nav" href="#">Contact</a></li>
+                                    <li><a class="button-nav button-header-nav" href="<?php echo page('about') ?>">About</a></li>
+                                    <li><a class="button-nav button-header-nav" href="<?php echo page('home') . '#featured-work' ?>">Work</a></li>
+                                    <li><a class="button-nav button-header-nav" href="mailto:kgchoy@sfu.ca">Email Me</a></li>
                                 </ul>
 
                             </div> <!-- ./nav-bar-right -->
@@ -343,8 +363,281 @@
         </section>
 
 
+        <section>
+            <h2 class="style-guide-h2">Footer Navigation</h2>
+
+            <h3>CSS selectors:</h3>
+            <p>footer</p>
+
+            <p>
+                The footer contains links to my social media accounts, as well as to my resume and this style guide.
+            </p>
+
+            <h3>Sample code:</h3>
+            <pre><code>
+&lt;footer&gt;
+    &lt;div id="footer-container"&gt;
+        &lt;div id="footer-bar-main"&gt;
+            &lt;div id="footer-bar-left"&gt;
+                &lt;ul class="menu-items-list" id="left-footer-links"&gt;
+                    &lt;li&gt;
+                        &lt;a class="button-nav button-footer-nav" href="mailto:kgchoy@sfu.ca"&gt;&lt;img class="footer-icon" src="&lt;?php echo url('assets/images/icon-email.png') ?&gt;" alt="Email icon" width="32" height="18" aria-hidden="true"&gt;Email&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a class="button-nav button-footer-nav" href="http://ca.linkedin.com/pub/kevin-choy/93/a52/784/"&gt;&lt;img class="footer-icon" src="&lt;?php echo url('assets/images/icon-linkedin.png') ?&gt;" alt="Email icon" width="27" height="18" aria-hidden="true"&gt;LinkedIn&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a class="button-nav button-footer-nav" href="https://github.com/kgchoy"&gt;&lt;img class="footer-icon" src="&lt;?php echo url('assets/images/icon-github.png') ?&gt;" alt="GitHub icon" width="25" height="18" aria-hidden="true"&gt;GitHub&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+
+                &lt;ul class="menu-items-list" id="right-footer-links"&gt;
+                    &lt;li&gt;
+                        &lt;a class="button-nav button-footer-nav" href="assets/doc/resume.pdf"&gt;&lt;img class="footer-icon" src="&lt;?php echo url('assets/images/icon-resume.png') ?&gt;" alt="Resume icon" width="25" height="18" aria-hidden="true"&gt;Resume&lt;/a&gt;
+                    &lt;/li&gt;
+
+                    &lt;li&gt;
+                        &lt;a class="button-nav button-footer-nav" href="&lt;?php echo page('style-guide') ?&gt;"&gt;&lt;img class="footer-icon" src="&lt;?php echo url('assets/images/icon-style-guide.png') ?&gt;" alt="Style guide icon" width="25" height="18" aria-hidden="true"&gt;Style Guide&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt; &lt;!-- ./footer-bar-left --&gt;
+            &lt;div id="footer-bar-right"&gt;
+                &lt;?php echo $site-&gt;copyright()-&gt;kirbytext() ?&gt; &lt;!-- copyright text --&gt;
+            &lt;/div&gt; &lt;!-- ./footer-bar-right --&gt;
+        &lt;/div&gt; &lt;!-- ./footer-bar-main --&gt;
+    &lt;/div&gt; &lt;!-- ./footer-container --&gt;
+&lt;/footer&gt;
+            </code></pre>
+
+            <h3>Rendered element:</h3>
+
+                    <footer>
+                        <div id="footer-container">
+                            <div id="footer-bar-main">
+                                <div id="footer-bar-left">
+                                    <ul class="menu-items-list" id="left-footer-links">
+                                        <li>
+                                            <a class="button-nav button-footer-nav" href="mailto:kgchoy@sfu.ca"><img class="footer-icon" src="<?php echo url('assets/images/icon-email.png') ?>" alt="Email icon" width="32" height="18" aria-hidden="true">Email</a>
+                                        </li>
+                                        <li>
+                                            <a class="button-nav button-footer-nav" href="http://ca.linkedin.com/pub/kevin-choy/93/a52/784/"><img class="footer-icon" src="<?php echo url('assets/images/icon-linkedin.png') ?>" alt="Email icon" width="27" height="18" aria-hidden="true">LinkedIn</a>
+                                        </li>
+                                        <li>
+                                            <a class="button-nav button-footer-nav" href="https://github.com/kgchoy"><img class="footer-icon" src="<?php echo url('assets/images/icon-github.png') ?>" alt="GitHub icon" width="25" height="18" aria-hidden="true">GitHub</a>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="menu-items-list" id="right-footer-links">
+                                        <li>
+                                            <a class="button-nav button-footer-nav" href="assets/doc/resume.pdf"><img class="footer-icon" src="<?php echo url('assets/images/icon-resume.png') ?>" alt="Resume icon" width="25" height="18" aria-hidden="true">Resume</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="button-nav button-footer-nav" href="<?php echo page('style-guide') ?>"><img class="footer-icon" src="<?php echo url('assets/images/icon-style-guide.png') ?>" alt="Style guide icon" width="25" height="18" aria-hidden="true">Style Guide</a>
+                                        </li>
+                                    </ul>
+                                </div> <!-- ./footer-bar-left -->
+                                <div id="footer-bar-right">
+                                    <?php echo $site->copyright()->kirbytext() ?> <!-- copyright text -->
+                                </div> <!-- ./footer-bar-right -->
+                            </div> <!-- ./footer-bar-main -->
+                        </div> <!-- ./footer-container -->
+                    </footer>
+
+        </section>
+
+        <section>
+            <h2 class="style-guide-h2">Work Gallery Listings</h2>
+
+            <h3>CSS Selectors:</h3>
+            <p>.main-page-work-grid</p>
+
+            <p>Displays work in a three-column grid. I currently only display two projects, but it still allows for whitespace on the rightmost column in that case. It is meant to fill the width of the container it is in; in this style guide, that is the viewport size, which is wider than on the actual portfolio main page.</p>
+
+            <h3>Sample Code:</h3>
+            <pre><code>
+&lt;div class="grid"&gt;
+    &lt;div class="main-page-work-grid"&gt;
+        &lt;div class="col-1of3-work-main"&gt;
+            
+            &lt;div class="col-1of3-work-figure"&gt;
+                &lt;div class="main-work-listing-figure"&gt;
+                    &lt;figure&gt;
+                        &lt;a href="&lt;?php echo page('bccampus') ?&gt;"&gt;&lt;img src="content/home/bcc-website-screenshot-cropped.jpg" alt="BCcampus website screenshot"&gt;&lt;/a&gt;
+                    &lt;/figure&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="col-2of3-work-description"&gt;
+                &lt;div class="work-description"&gt;
+                    &lt;h3&gt;&lt;a href="&lt;?php echo page('bccampus') ?&gt;"&gt;BCcampus.ca Usability Testing&lt;/a&gt;&lt;/h3&gt;
+                    &lt;em&gt;UX research &#149; usability testing&lt;/em&gt;
+                    &lt;p&gt;
+                        I created and facilitated a usability test for the BCcampus.ca website to find out whether the audience could perform typical tasks on the website easily, and to discover usability problems.
+                    &lt;/p&gt;
+                &lt;/div&gt; &lt;!-- ./work-description --&gt;
+            &lt;/div&gt; &lt;!-- ./col-2of3-work-description --&gt;
+        &lt;/div&gt; &lt;!-- ./col-1of3-work-main --&gt;
+    &lt;/div&gt;
+
+    &lt;div class="main-page-work-grid"&gt;
+        &lt;div class="col-1of3-work-main"&gt;
+            
+            &lt;div class="col-1of3-work-figure"&gt;
+                &lt;div class="main-work-listing-figure"&gt;
+                    &lt;figure class="notif-image"&gt;
+                        &lt;a href="&lt;?php echo page('notif') ?&gt;"&gt;&lt;img src="content/home/notif-thumb.png" alt="Notif use case screenshot"&gt;&lt;/a&gt;
+                    &lt;/figure&gt;
+                &lt;/div&gt; &lt;!-- ./main-work-listing-figure --&gt;
+            &lt;/div&gt; &lt;!-- ./col-1of3-work-figure --&gt;
+
+            &lt;div class="col-2of3-work-description"&gt;
+                &lt;div class="work-description"&gt;
+                    &lt;h3&gt;&lt;a href="&lt;?php echo page('notif') ?&gt;"&gt;Notif Concept Mapping Tool&lt;/a&gt;&lt;/h3&gt;
+                    &lt;em&gt;UX research &amp; development &#149; usability testing &#149; programming&lt;/em&gt;
+                    &lt;p&gt;
+                        Prototyping a concept mapping tool targeted towards the academic teaching and learning domain. The design and functionality of our tool was heavily use-case and scenario-driven.
+                    &lt;/p&gt;
+
+                &lt;/div&gt; &lt;!-- ./work-description --&gt;
+            &lt;/div&gt; &lt;!-- ./col-2of3-work-description --&gt;
+
+        &lt;/div&gt; &lt;!-- ./col-1of3-work-main --&gt;
+    &lt;/div&gt; &lt;!-- ./main-page-work-grid --&gt;
+
+&lt;/div&gt; &lt;!-- ./grid (3-column) --&gt;
+
+            </code></pre>
+
+
+            <h3>Rendered Code:</h3>
+
+            <div class="grid">
+                <div class="main-page-work-grid">
+                    <div class="col-1of3-work-main">
+                        
+                        <div class="col-1of3-work-figure">
+                            <div class="main-work-listing-figure">
+                                <figure>
+                                    <a href="<?php echo page('bccampus') ?>"><img src="content/home/bcc-website-screenshot-cropped.jpg" alt="BCcampus website screenshot"></a>
+                                </figure>
+                            </div>
+                        </div>
+                        
+                        <div class="col-2of3-work-description">
+                            <div class="work-description">
+                                <h3><a href="<?php echo page('bccampus') ?>">BCcampus.ca Usability Testing</a></h3>
+                                <em>UX research &#149; usability testing</em>
+                                <p>
+                                    I created and facilitated a usability test for the BCcampus.ca website to find out whether the audience could perform typical tasks on the website easily, and to discover usability problems.
+                                </p>
+                            </div> <!-- ./work-description -->
+                        </div> <!-- ./col-2of3-work-description -->
+                    </div> <!-- ./col-1of3-work-main -->
+                </div>
+
+                <div class="main-page-work-grid">
+                    <div class="col-1of3-work-main">
+                        
+                        <div class="col-1of3-work-figure">
+                            <div class="main-work-listing-figure">
+                                <figure class="notif-image">
+                                    <a href="<?php echo page('notif') ?>"><img src="content/home/notif-thumb.png" alt="Notif use case screenshot"></a>
+                                </figure>
+                            </div> <!-- ./main-work-listing-figure -->
+                        </div> <!-- ./col-1of3-work-figure -->
+
+                        <div class="col-2of3-work-description">
+                            <div class="work-description">
+                                <h3><a href="<?php echo page('notif') ?>">Notif Concept Mapping Tool</a></h3>
+                                <em>UX research &amp; development &#149; usability testing &#149; programming</em>
+                                <p>
+                                    Prototyping a concept mapping tool targeted towards the academic teaching and learning domain. The design and functionality of our tool was heavily use-case and scenario-driven.
+                                </p>
+
+                            </div> <!-- ./work-description -->
+                        </div> <!-- ./col-2of3-work-description -->
+
+                    </div> <!-- ./col-1of3-work-main -->
+                </div> <!-- ./main-page-work-grid -->
+
+            </div> <!-- ./grid (3-column) -->
+
+        </section>
+
+        <section>
+            <h2>Work Page Navigation</h2>
+            <p>A two-column grid of buttons, used at the end of work pages for navigation.</p>
+
+            <h3>CSS Selectors:</h3>
+            <p>.grid, .work-page-bottom-buttons (both are required)</p>
+
+            <h3>Sample Code:</h3>
+            <pre><code>
+&lt;div class="grid work-page-bottom-buttons"&gt;
+    &lt;div class="body-gridCol-1of2"&gt;
+        &lt;a class="button-nav full-width-button center-aligned-text" href="&lt;?php echo page('home') . '#featured-work' ?&gt;"&gt;Return to Work Gallery&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class="body-gridCol-2of2"&gt;
+        &lt;a class="button-nav full-width-button center-aligned-text" href="&lt;?php echo page('notif') ?&gt;"&gt;Next Work: Notif&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt; &lt;!-- ./work-page-bottom-buttons --&gt;
+            </code></pre>
+
+
+            <h3>Rendered Code:</h3>
+            <div class="grid work-page-bottom-buttons">
+                <div class="body-gridCol-1of2">
+                    <a class="button-nav full-width-button center-aligned-text" href="<?php echo page('home') . '#featured-work' ?>">Return to Work Gallery</a>
+                </div>
+
+                <div class="body-gridCol-2of2">
+                    <a class="button-nav full-width-button center-aligned-text" href="<?php echo page('notif') ?>">Next Work: Notif</a>
+                </div>
+            </div> <!-- ./work-page-bottom-buttons -->
+
+        </section>
+
+
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section id="color-scheme">
+        <h2 class="style-guide-h2">Main Color Scheme</h3>
+
+        <h3>Light Blue</h3>
+
+        <p>
+            rgb(0, 155, 223)<br>
+            This is the predominant color used throughout the website to create a consistent personal branding scheme.
+        </p>
+
+        <h4>Rendered Color:</h4>
+        <div class="light-blue color-block"></div>
+
+        <h3>Dark Blue</h3>
+
+        <p>
+            rgb(0, 93, 170)<br>
+            Used as a secondary color tone. For example, it is used in the logo and when buttons are hovered over.
+        </p>
+
+        <h4>Rendered Color:</h4>
+        <div class="dark-blue color-block"></div>
+
+        <h3>Red</h3>
+
+        <p>
+            rgb(255, 0, 0)
+            Used as a text hyperlink hover color. 
+        </p>
+
+        <h4>Rendered Color:</h4>
+        <div class="red color-block"></div>
+
+
+    </section>
 
 </body>
 </html>
