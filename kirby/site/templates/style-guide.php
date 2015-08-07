@@ -105,6 +105,8 @@
 
         <section>
             <h2 class="style-guide-h2">Text Input Field</h2>
+
+            <p>Forms aren't used on the current version of the website, but a layout like this may be used in the future.</p>
             
             <h3>CSS selector:</h3>
             <p>
@@ -115,18 +117,19 @@
             <h3>Sample code:</h3>
             <pre><code>
 &lt;form action="reciept.html" method="post" id="contact-form"&gt;
-&lt;div class="grid"&gt;
-    &lt;div class="body-gridCol-1of2"&gt;
-        &lt;label for="first-name" class="form-label"&gt;First Name:&lt;/label&gt;
-        &lt;input class="field-half" type="text" id="first-name" name="first-name"&gt;
+    &lt;div class="grid"&gt;
+        &lt;div class="body-gridCol-1of2"&gt;
+            &lt;label for="first-name" class="form-label"&gt;First Name:&lt;/label&gt;
+            &lt;input class="field-half" type="text" id="first-name" name="first-name"&gt;
+        &lt;/div&gt;
+        &lt;div class="body-gridCol-2of2"&gt;
+            &lt;label for="last-name" class="form-label"&gt;Last Name:&lt;/label&gt;
+            &lt;input class="field-half" type="text" id="last-name" name="last-name"&gt;
+        &lt;/div&gt;
+        &lt;label for="email" class="form-label"&gt;Credit Card Number:&lt;/label&gt;
+        &lt;input class="field-half" type="text" id="email" name="email"&gt;
     &lt;/div&gt;
-    &lt;div class="body-gridCol-2of2"&gt;
-        &lt;label for="last-name" class="form-label"&gt;Last Name:&lt;/label&gt;
-        &lt;input class="field-half" type="text" id="last-name" name="last-name"&gt;
-    &lt;/div&gt;
-    &lt;label for="email" class="form-label"&gt;Credit Card Number:&lt;/label&gt;
-    &lt;input class="field-half" type="text" id="email" name="email"&gt;
-&lt;/div&gt;
+    &lt;input type="submit" value="Submit"&gt;
 &lt;/form&gt;
             </code></pre>
             
@@ -144,6 +147,8 @@
                     <label for="email" class="form-label">Email:</label>
                     <input class="field-half" type="text" id="email" name="email">
                 </div>
+
+                <input type="submit" value="Submit">
             </form>
 
         </section>
@@ -174,7 +179,7 @@
 
             <h3>Sample code for H1:</h3>
             <pre><code>
-    &lt;h1&gt;This is an H1 header&lt;/h1&gt;
+&lt;h1&gt;This is an H1 header&lt;/h1&gt;
             </code></pre>
 
             <h3>Rendered Element:</h3>
@@ -604,7 +609,7 @@
     <!-- // COMBINED ELEMENTS SECTION -->
 
     <section id="color-scheme">
-        <h2 class="style-guide-h2">Main Color Scheme</h3>
+        <h2 class="style-guide-h2">Main Color Scheme</h2>
 
         <h3>Light Blue</h3>
 
