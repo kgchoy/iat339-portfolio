@@ -555,7 +555,7 @@ ol li{
 
 #footer-bar-left ul {
     float: left;
-    clear: both;
+    clear: none;
 }
 
 #footer-bar-left ul li {
@@ -572,12 +572,7 @@ ol li{
 
 #footer-bar-left {
     float: left;
-    clear: both;
-}
-
-#footer-bar-left ul {
-    float: left;
-    clear: both;
+    clear: none;
 }
 
 #footer-bar-right ul li {
@@ -649,7 +644,7 @@ ol li{
     }
 
     .menu-items-list {
-        width: 100%;
+        /*width: 100%;*/
         margin-top: 3.5em;
         padding-left: 1.5em;
         clear: both;
@@ -992,10 +987,19 @@ footer .menu-items-list li a {
 #left-footer-links, #right-footer-links {
     display: inline;
     margin-left: 0;
-    margin-right: 2.5em;
+    margin-right: 0;
     padding-left: 0;
     padding-right: 0;
 }
+
+@media (max-width: 97rem) {
+    #footer-bar-right {
+        clear: both;
+        float: none;
+        padding-top: 0.75em;
+    }
+}
+
 
 @media (max-width: 79rem) {
     #footer-bar-right {
@@ -1007,14 +1011,9 @@ footer .menu-items-list li a {
     #footer-bar-left .menu-items-list {
         margin: 0;
     }
-
 }
 
-@media (max-width: 52rem) {
-    #left-footer-links {
-        margin-right: 10rem;
-    }
-
+@media (max-width: 48rem) {
     #left-footer-links, #right-footer-links, #footer-bar-right {
         display: block;
         float: left;
@@ -1024,19 +1023,24 @@ footer .menu-items-list li a {
         clear: both;
         float: left;
     }
-}
 
-@media (max-width: 37rem) {
-    #left-footer-links {
-        margin-right: 4rem;
+    #left-footer-links li {
+        margin-right: 5rem;
+        padding-right: 0;
     }
+
 }
 
-@media (max-width: 29rem) {
-    #left-footer-links {
+@media (max-width: 32rem) {
+    #left-footer-links li {
         margin-right: 0rem;
     }
+
+    #footer-bar-left .menu-items-list {
+        width: 100%;
+    }
 }
+
 
 /* reduce the amount of vertical spacing above the first paragraph on the about page */
 #about-summary > p:first-child {
