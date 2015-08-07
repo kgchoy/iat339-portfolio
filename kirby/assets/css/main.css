@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-section:not([id]) {
+/*section:not([id]) {
     margin: 1em 0;
     padding: 0.5em 0;
     border-top: 1px solid #333;
@@ -26,7 +26,7 @@ section code {
     padding: 0.5em 0.75em;
     margin-top:0.25rem;
     color:black;
-}
+}*/
 
 header {
     background-color: rgb(255, 255, 255);
@@ -275,7 +275,7 @@ input {
 /* 
   TEXT AND VISUAL ELEMENTS -------------------
 */
-#first-article {
+#first-section {
     margin-top: 6rem;
 }
 
@@ -672,7 +672,7 @@ ol li{
 
 @media (max-width: 50.75rem) {
     #nav-bar-main, #footer-bar-main {
-        padding: 0 1.85em;
+        padding: 0 1.35em;
     }
 }
 
@@ -762,17 +762,17 @@ ol li{
  *  This is for the container that contains each section that describes the hotel facilities,
  *  the trip experience, and so on.
  */
-.article-container {
+.section-container {
     width: 100%;
     margin: 0 auto;
     clear: both;
 }
 
-.full-width-image, .full-width-figure img, .article-container figure, .article-container figure img {
+.full-width-image, .full-width-figure img, .section-container figure, .section-container figure img {
     width: 100%;
 }
 
-.full-width-figure, .article-container figure {
+.full-width-figure, .section-container figure {
     width: 100%;
     margin: 1em 0;
 }
@@ -812,7 +812,7 @@ figcaption {
 }*/
 
 @media(max-width: 71rem) {
-    .article-container {
+    .section-container {
         width: 100%;
     }
 }

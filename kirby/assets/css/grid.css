@@ -120,11 +120,11 @@
 @media (max-width: 50.75rem) {
     .col-2of3 {
         width: 100%;
-        padding: 1.5em 1.85em;  /* add more vertical padding */
+        padding: 1.5em 1.35em;  /* add more vertical padding */
     }
 
     .col-1of3Main, .col-1of3-work-main {
-        padding: 1.5em 1.85em;
+        padding: 1.5em 1.35em;
         width: 100%;
     }
 
@@ -134,7 +134,7 @@
     }
 
     .col-3of3 {
-        padding: 1.5em 1.85em;
+        padding: 1.5em 1.35em;
         width: 100%;
     }
 

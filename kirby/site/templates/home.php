@@ -5,7 +5,7 @@
     <div id="page-container">
         <div class="grid">
             <div class="col-3of3">
-                <article id="first-article" class="article-container">
+                <section id="first-section" class="section-container">
                     <div id="banner-text">
                         <h1><?php echo $page->main_banner_text() ?></h1>
 
@@ -13,7 +13,7 @@
                         <a class="button-nav partial-width-button" href="<?php echo page('about') ?>">About Me&nbsp;&nbsp;&rsaquo;&rsaquo;</a>
 
                     </div>
-                </article>
+                </section>
 
                 <?php snippet('mainPageProjects') ?>
 

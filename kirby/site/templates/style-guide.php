@@ -25,7 +25,9 @@
 
       <p>
           Go to: <br>
-          <a href="#interactive_elements" class="button-nav">Interactive Elements</a><a href="#text_elements" class="button-nav">Text Elements</a><a href="#other_stuff" class="button-nav">Other stuff</a><a href="#combined_elements" class="button-nav">Combined Elements</a>
+          <a href="#interactive_elements" class="button-nav">Interactive Elements</a>
+          <a href="#text_elements" class="button-nav">Text Elements</a>
+          <a href="#combined_elements" class="button-nav">Combined Elements</a>
       </p>
 
     </nav>

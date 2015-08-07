@@ -4,21 +4,21 @@
 
     <div class="grid">
         <div class="col-3of3">
-            <article id="first-article" class="article-container">
+            <section id="first-section" class="section-container">
                 <h1><?php echo $page->title()->html() ?></h1>
-            </article>
+            </section>
         </div>
     </div>
 
     <div class="grid">
         <div class="col-2of3">
-            <article class="article-container" id="about-summary">
+            <section class="section-container" id="about-summary">
                 <?php echo $page->about_section()->kirbytext() ?>
-            </article>
+            </section>
 
-            <article class="article-container" id="skills-summary">
+            <section class="section-container" id="skills-summary">
             <?php echo $page->skills_section()->kirbytext() ?>
-            </article>
+            </section>
 
             <a class="button-nav partial-width-button" href="assets/doc/resume.pdf">View My Resume&nbsp;&nbsp;&rsaquo;&rsaquo;</a>
 

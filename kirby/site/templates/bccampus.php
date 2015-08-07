@@ -4,9 +4,9 @@
 
         <div class="grid">
             <div class="col-3of3">
-                <article id="first-article" class="article-container">
+                <section id="first-section" class="section-container">
                     <h1><?php echo $page->title()->html() ?></h1>
-                </article>
+                </section>
             </div>
         </div>
 
@@ -44,19 +44,19 @@
 
 
             <div class="col-2of3">
-                <article class="article-container" id="about-section">
+                <section class="section-container" id="about-section">
                 
                     <?php echo $page->about_section()->kirbytext() ?>
 
-                </article>
+                </section>
 
-                <article class="article-container" id="process-section">
+                <section class="section-container" id="process-section">
                     <?php echo $page->process_section()->kirbytext() ?>
-                </article>
+                </section>
 
-                <article class="article-container" id="outcomes-section">
+                <section class="section-container" id="outcomes-section">
                     <?php echo $page->outcomes_section()->kirbytext() ?>
-                </article>
+                </section>
 
                 <!-- navigation buttons for end of a work page -->
                 <div class="grid work-page-bottom-buttons">

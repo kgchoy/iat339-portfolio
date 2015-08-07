@@ -4,11 +4,11 @@
 
     <div class="grid">
         <div class="col-3of3">
-            <article id="first-article" class="article-container">
+            <section id="first-section" class="section-container">
                 <h1><?php echo $page->title()->html() ?></h1>
 
                 <?php echo $page->text()->kirbytext() ?>
-            </article>
+            </section>
         </div>
     </div> <!-- ./grid -->
 
