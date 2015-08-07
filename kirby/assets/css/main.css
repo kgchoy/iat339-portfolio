@@ -43,13 +43,13 @@ footer {
     margin-top: 0.25em;
     margin-bottom: 0.75em;
     font-size: 1.1rem;
-    border-radius: 0.6em;
+    border-radius: 0.5em;
 }
 
 /* Reduce horizontal button padding */
 @media (max-width: 65rem) {
     .button-nav {
-        padding: 0.5em 0.5em;
+        padding: 0.65em 0.75em;
     }
 
     .button-header-nav {
@@ -264,7 +264,7 @@ ol li {
 
 .partial-width-button {
     font-size: 1.2rem;
-    border-radius: 0.6em;
+    border-radius: 0.5em;
 }
 
 @media (max-width: 36rem) {
