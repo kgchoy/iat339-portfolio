@@ -18,7 +18,7 @@
                             <div class="col-2of3-work-description">
                                 <div class="work-description">
                                     <h3><a href="<?php echo page('bccampus') ?>">BCcampus.ca Usability Testing</a></h3>
-                                    <em>UX research &#149; usability testing</em>
+                                    <em>UX research &bull; usability testing</em>
                                     <p>
                                         I created and facilitated a usability test for the BCcampus.ca website to find out whether the audience could perform typical tasks on the website easily, and to discover usability problems.
                                     </p>
@@ -41,7 +41,7 @@
                             <div class="col-2of3-work-description">
                                 <div class="work-description">
                                     <h3><a href="<?php echo page('notif') ?>">Notif Concept Mapping Tool</a></h3>
-                                    <em>UX research &amp; development &#149; usability testing &#149; programming</em>
+                                    <em>UX research &amp; development &bull; usability testing &bull; programming</em>
                                     <p>
                                         Prototyping a concept mapping tool targeted towards the academic teaching and learning domain. The design and functionality of our tool was heavily use-case and scenario-driven.
                                     </p>
