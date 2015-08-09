@@ -639,6 +639,11 @@ footer .menu-items-list li a {
     }
 }
 
+/* removes borders from most images. rule needed for IE10 and below */
+.footer-icon, .section-container figure img {
+    border-style: none;
+}
+
 /* reduce the amount of vertical spacing above the first paragraph on the about page */
 #about-summary > p:first-child {
     margin-top: 0;
