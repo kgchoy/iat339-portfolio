@@ -18,7 +18,7 @@ In my spare time, I also enjoy activities such as hiking, board &amp; tabletop g
 
 Skills-Section:
 
-### UX Design, Research &amp; Evaluation
+## UX Design, Research &amp; Evaluation Skills
 - Persona &amp; scenario development
 - Use case modelling
 - Usability testing
@@ -26,7 +26,7 @@ Skills-Section:
 - Prototyping and wireframing (Balsamiq Mockups, Axure)
 - Rapid prototyping
 
-### Other Technical Skills
+## Other Technical Skills
 - Responsive web design
 - Graphic and print design
 - Information design
