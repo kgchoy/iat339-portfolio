@@ -327,7 +327,7 @@
                     &lt;ul class="menu-items-list"&gt;
                         &lt;li&gt;&lt;a class="button-nav button-header-nav" href="&lt;?php echo page('about') ?&gt;"&gt;About&lt;/a&gt;&lt;/li&gt;
                         &lt;li&gt;&lt;a class="button-nav button-header-nav" href="&lt;?php echo page('home') . '#featured-work' ?&gt;"&gt;Work&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a class="button-nav button-header-nav" href="mailto:kgchoy@sfu.ca"&gt;Email Me&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="button-nav button-header-nav" href="&lt;?php echo page('home') . '#contact-me' ?&gt;"&gt;Contact&lt;/a&gt;&lt;/li&gt;
                     &lt;/ul&gt;
 
                 &lt;/div&gt; &lt;!-- ./nav-bar-right --&gt;
@@ -356,7 +356,7 @@
                                 <ul class="menu-items-list">
                                     <li><a class="button-nav button-header-nav" href="<?php echo page('about') ?>">About</a></li>
                                     <li><a class="button-nav button-header-nav" href="<?php echo page('home') . '#featured-work' ?>">Work</a></li>
-                                    <li><a class="button-nav button-header-nav" href="mailto:kgchoy@sfu.ca">Email Me</a></li>
+                                    <li><a class="button-nav button-header-nav" href="<?php echo page('home') . '#contact-me' ?>">Contact</a></li>
                                 </ul>
 
                             </div> <!-- ./nav-bar-right -->
