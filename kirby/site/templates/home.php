@@ -21,7 +21,7 @@
                 </section>
 
                 <section class="section-container">
-                
+
                     <span class="anchor-link" id="contact-me"></span>
 
                     <?php echo $page->contact_me_text()->kirbytext() ?>
