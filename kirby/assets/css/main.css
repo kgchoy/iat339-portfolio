@@ -466,6 +466,7 @@ ol li {
     width: 100%;
     margin: 0 auto;
     clear: both;
+    margin-bottom: 1em;
 }
 
 .full-width-image, .full-width-figure img, .section-container figure, .section-container figure img {
@@ -521,10 +522,6 @@ figcaption {
 
 #process-section h2, #outcomes-section h2 {
     margin-top: 2em;
-}
-
-.main-work-listing-figure img {
-    border: 0.075rem solid #cccccc;
 }
 
 .menu-items-list:after {
@@ -643,10 +640,18 @@ footer .menu-items-list li a {
     }
 }
 
-/* removes borders from most images. rule needed for IE10 and below */
-.footer-icon, .section-container figure img {
+/*
+ *  Removes borders from most images. Rule needed for IE10 and below because those browsers add it.
+ *  Do not apply this rule for images on the main page's work listing.
+ */
+.footer-icon, .section-container figure img:not[.work-listing-img] {
     border-style: none;
 }
+
+.main-work-listing-figure img {
+    border: 0.075rem solid rgb(225, 225, 225);
+}
+
 
 /* reduce the amount of vertical spacing above the first paragraph on the about page */
 #about-summary > p:first-child {
@@ -670,3 +675,4 @@ footer .menu-items-list li a {
         text-align: left;
     }
 }
+

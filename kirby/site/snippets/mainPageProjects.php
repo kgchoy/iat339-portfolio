@@ -10,7 +10,7 @@
                             <div class="col-1of3-work-figure">
                                 <div class="main-work-listing-figure">
                                     <figure>
-                                        <a href="<?php echo page('bccampus') ?>"><img src="content/home/bcc-website-screenshot-cropped.jpg" alt="BCcampus website screenshot"></a>
+                                        <a href="<?php echo page('bccampus') ?>"><img class="work-listing-img" src="content/home/bcc-website-screenshot-cropped.jpg" alt="BCcampus website screenshot"></a>
                                     </figure>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@
                             <div class="col-1of3-work-figure">
                                 <div class="main-work-listing-figure">
                                     <figure class="notif-image">
-                                        <a href="<?php echo page('notif') ?>"><img src="content/home/notif-thumb.png" alt="Notif use case screenshot"></a>
+                                        <a href="<?php echo page('notif') ?>"><img class="work-listing-img" src="content/home/notif-thumb.png" alt="Notif use case screenshot"></a>
                                     </figure>
                                 </div> <!-- ./main-work-listing-figure -->
                             </div> <!-- ./col-1of3-work-figure -->
