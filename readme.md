@@ -6,4 +6,4 @@
 
 Branding elements are somewhat influenced by my old (current) portfolio, which can be found at [http://kevinchoy.ca/](http://kevinchoy.ca/). The site uses the Kirby content management system from Project 03.
 
-The newest contents are located in the **kirby** folder. An older version of the site, which uses HTML/CSS only (no Kirby, and therefore no need run on a server), is located in the **old-work** folder.
+The newest contents are located in the **kirby** folder. An older version of the site from Week 12, which uses HTML/CSS only (no Kirby, and therefore no need run on a server), is located in the **old-work** folder.
