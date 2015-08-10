@@ -159,6 +159,10 @@ h2 {
     margin-top: 0;
 }
 
+#skills-summary h2 {
+    margin-top: 1.25em;
+}
+
 h3 {
     color: rgb(0, 155, 223);
     font-weight: 700;
@@ -651,6 +655,10 @@ footer .menu-items-list li a {
 
 .work-page-bottom-buttons {
     margin-top: 4em;
+}
+
+#about-view-resume-button {
+    margin-top: 1em;
 }
 
 .center-aligned-text {

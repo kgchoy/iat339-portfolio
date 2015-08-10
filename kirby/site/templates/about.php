@@ -20,7 +20,7 @@
             <?php echo $page->skills_section()->kirbytext() ?>
             </section>
 
-            <a class="button-nav partial-width-button" href="assets/doc/resume.pdf">View My Resume&nbsp;&nbsp;&rsaquo;&rsaquo;</a>
+            <a id="about-view-resume-button" class="button-nav partial-width-button" href="assets/doc/resume.pdf">View My Resume&nbsp;&nbsp;&rsaquo;&rsaquo;</a>
 
         </div> <!-- ./col-2of3 -->
 
