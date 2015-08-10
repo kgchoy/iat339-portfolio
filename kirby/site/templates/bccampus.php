@@ -11,7 +11,7 @@
         </div>
 
         <div class="grid">
-            <div class="col-1of3Main" id="work-sidebar">
+            <div class="col-1of3-work-sidebar" id="work-sidebar">
                 <h4>Links &amp; Resources</h4>
                 <a class="button-nav full-width-button" href="<?php echo $page->files()->find('bccampus-website-usability-test-report.pdf')->url() ?>">View Full Usability Test Report&nbsp;&nbsp;&rsaquo;&rsaquo;</a>
                 <a class="button-nav full-width-button" href="http://bccampus.ca">BCcampus.ca&nbsp;&nbsp;&rsaquo;&rsaquo;</a>
@@ -40,7 +40,7 @@
                 <p>
                     <?php echo $page->collaborators() ?>
                 </p>
-            </div> <!-- ./col-1of3Main -->
+            </div> <!-- ./col-1of3-work-sidebar -->
 
 
             <div class="col-2of3">

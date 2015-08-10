@@ -24,7 +24,7 @@
 
         </div> <!-- ./col-2of3 -->
 
-        <div class="col-1of3Main">
+        <div class="col-1of3-about-sidebar">
             <?php echo $page->profile_image()->kirbytext() ?>
         </div> <!-- ./col-1of3 -->
 

@@ -22,7 +22,7 @@
     width: 70%;
 }
 
-.col-1of3Main {
+.col-1of3-work-sidebar, .col-1of3-about-sidebar {
     width: 30%;
 }
 
@@ -38,11 +38,11 @@
     width: 33.333%;
 }
 
-.col-1of3Main figure, .main-work-listing-figure figure {
+.col-1of3-work-sidebar figure, .col-1of3-about-sidebar figure, .main-work-listing-figure figure {
     margin: 0;  /* remove default figure margin */
 }
 
-.col-1of3Main figure img, .main-work-listing-figure figure img {
+.col-1of3-work-sidebar figure img, .col-1of3-about-sidebar figure img, .main-work-listing-figure figure img {
     width: 100%;  /* fill as much of the width and height of the column as possible */
     height: 100%;
 }
@@ -83,10 +83,16 @@
 }
 
 
-/* increase the amount of column width dedicated to the image */
+/* increase the amount of column width */
 @media (max-width: 59rem) {
-    .col-1of3Main {
-        padding-right: 0;
+    /* when used as a left sidebar */
+    .col-1of3-work-sidebar {
+        padding-right: 0; /* eliminate padding */
+    }
+
+    /* when used as a right sidebar */
+    .col-1of3-about-sidebar {
+        padding-left: 1em; /* reduce the amount of padding */
     }
 
     .col-2of3 {
@@ -118,7 +124,7 @@
         padding: 1.5em 1.35em;  /* add more vertical padding */
     }
 
-    .col-1of3Main, .col-1of3-work-main {
+    .col-1of3-work-sidebar, .col-1of3-about-sidebar, .col-1of3-work-main {
         padding: 1.5em 1.35em;
         width: 100%;
     }

@@ -11,7 +11,7 @@
         </div>
 
         <div class="grid">
-            <div class="col-1of3Main" id="work-sidebar">
+            <div class="col-1of3-work-sidebar" id="work-sidebar">
                 <h4>Categories</h4>
                 <p>
                     <?php echo $page->categories() ?>
@@ -36,7 +36,7 @@
                 <p>
                     <?php echo $page->collaborators() ?>
                 </p>
-            </div> <!-- ./col-1of3Main -->
+            </div> <!-- ./col-1of3-work-sidebar -->
 
 
             <div class="col-2of3">
