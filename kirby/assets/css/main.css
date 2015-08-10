@@ -640,10 +640,10 @@ footer .menu-items-list li a {
 }
 
 /*
- *  Removes borders from most images. Rule needed for IE10 and below because those browsers add it.
- *  Do not apply this rule for images on the main page's work listing.
+ *  Removes borders from the footer images. Rule needed for IE10 and below because those browsers
+ *  automatically add a border.
  */
-.footer-icon, .section-container figure img:not[.work-listing-img] {
+.footer-icon {
     border-style: none;
 }
 
